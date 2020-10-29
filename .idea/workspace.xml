@@ -48,7 +48,7 @@
       <recent name="my.playground" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GameRunnerTest.expect_tie_with_same_three_of_kind">
+  <component name="RunManager" selected="JUnit.my.playground in poker.kata">
     <configuration name="GameRunnerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="poker.kata" />
       <extension name="coverage">
@@ -129,8 +129,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.GameRunnerTest.expect_tie_with_same_three_of_kind" />
         <item itemvalue="JUnit.my.playground in poker.kata" />
+        <item itemvalue="JUnit.GameRunnerTest.expect_tie_with_same_three_of_kind" />
         <item itemvalue="JUnit.GameRunnerTest" />
         <item itemvalue="JUnit.GameRunnerTest.expect_tie__with_same_straight" />
         <item itemvalue="JUnit.GameRunnerTest.expect_player_two_win_with_straight_seven" />
@@ -153,10 +153,10 @@
       <screen x="0" y="0" width="1920" height="1038" />
     </state>
     <state x="418" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1038@0.0.1920.1038" timestamp="1603998830211" />
-    <state x="768" y="226" width="565" height="583" key="#com.intellij.ide.util.MemberChooser" timestamp="1604007875211">
+    <state x="768" y="226" width="565" height="583" key="#com.intellij.ide.util.MemberChooser" timestamp="1604010819399">
       <screen x="0" y="0" width="1920" height="1038" />
     </state>
-    <state x="768" y="226" width="565" height="583" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1038@0.0.1920.1038" timestamp="1604007875211" />
+    <state x="768" y="226" width="565" height="583" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1038@0.0.1920.1038" timestamp="1604010819399" />
     <state x="688" y="296" width="524" height="442" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1603992741698">
       <screen x="0" y="0" width="1920" height="1038" />
     </state>
@@ -173,22 +173,22 @@
       <screen x="0" y="0" width="1920" height="1038" />
     </state>
     <state width="490" height="506" key="DebuggerActiveHint/0.0.1920.1038@0.0.1920.1038" timestamp="1604008769417" />
-    <state width="1874" height="273" key="GridCell.Tab.0.bottom" timestamp="1604010419175">
+    <state width="1874" height="273" key="GridCell.Tab.0.bottom" timestamp="1604011510389">
       <screen x="0" y="0" width="1920" height="1038" />
     </state>
-    <state width="1874" height="273" key="GridCell.Tab.0.bottom/0.0.1920.1038@0.0.1920.1038" timestamp="1604010419175" />
-    <state width="1874" height="273" key="GridCell.Tab.0.center" timestamp="1604010419175">
+    <state width="1874" height="273" key="GridCell.Tab.0.bottom/0.0.1920.1038@0.0.1920.1038" timestamp="1604011510389" />
+    <state width="1874" height="273" key="GridCell.Tab.0.center" timestamp="1604011510389">
       <screen x="0" y="0" width="1920" height="1038" />
     </state>
-    <state width="1874" height="273" key="GridCell.Tab.0.center/0.0.1920.1038@0.0.1920.1038" timestamp="1604010419175" />
-    <state width="1874" height="273" key="GridCell.Tab.0.left" timestamp="1604010419174">
+    <state width="1874" height="273" key="GridCell.Tab.0.center/0.0.1920.1038@0.0.1920.1038" timestamp="1604011510389" />
+    <state width="1874" height="273" key="GridCell.Tab.0.left" timestamp="1604011510389">
       <screen x="0" y="0" width="1920" height="1038" />
     </state>
-    <state width="1874" height="273" key="GridCell.Tab.0.left/0.0.1920.1038@0.0.1920.1038" timestamp="1604010419174" />
-    <state width="1874" height="273" key="GridCell.Tab.0.right" timestamp="1604010419175">
+    <state width="1874" height="273" key="GridCell.Tab.0.left/0.0.1920.1038@0.0.1920.1038" timestamp="1604011510389" />
+    <state width="1874" height="273" key="GridCell.Tab.0.right" timestamp="1604011510389">
       <screen x="0" y="0" width="1920" height="1038" />
     </state>
-    <state width="1874" height="273" key="GridCell.Tab.0.right/0.0.1920.1038@0.0.1920.1038" timestamp="1604010419175" />
+    <state width="1874" height="273" key="GridCell.Tab.0.right/0.0.1920.1038@0.0.1920.1038" timestamp="1604011510389" />
     <state width="1874" height="338" key="GridCell.Tab.1.bottom" timestamp="1604010406898">
       <screen x="0" y="0" width="1920" height="1038" />
     </state>

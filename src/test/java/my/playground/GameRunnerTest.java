@@ -96,4 +96,16 @@ public class GameRunnerTest {
         String expectedResult = "Tie. - with three of kind: Nine";
         assertEquals(expectedResult, result);
     }
+
+
+    @Test
+    public void expect_player_two_win_with_flush() {
+        String gameInput = "Black: 2H 4D 3C  White: 2C 6C 7C";
+        GameRunner gameRunner = new GameRunner();
+
+        String result = gameRunner.run(gameInput);
+
+        String expectedResult = "White wins. - with flush: Clubs";
+        assertEquals(expectedResult, result);
+    }
 }

@@ -28,6 +28,10 @@ public class Rank implements Comparable<Rank> {
         return new Straight(card);
     }
 
+    public static Rank flush(Card card) {
+        return new Flush(card);
+    }
+
     public Integer getPriority() {
         return priority;
     }
@@ -135,13 +139,26 @@ public class Rank implements Comparable<Rank> {
         }
     }
 
+    private static class Flush extends Rank {
+        Card card;
+        public Flush(Card card) {
+            super(RankValue.Flush.numericValue, card.getValue());
+            this.card = card;
+        }
+
+        @Override
+        public String toString() {
+            return "flush: " + card.getSuit();
+        }
+    }
 
     public enum RankValue {
         HighCard(1),
         Pair(2),
         DoublePair(3),
         ThreeOfKind(4),
-        Straight(5);
+        Straight(5),
+        Flush(6);
 
         public final Integer numericValue;
         RankValue(int numValue){

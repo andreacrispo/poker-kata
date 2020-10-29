@@ -74,4 +74,18 @@ public class RuleEngineTest {
         Rank maxRank = ruleEngine.evaluate(hand);
         assertEquals(5, maxRank.getPriority());
     }
+
+
+    @Test
+    public void test_hand_with_flush() {
+        Hand hand = new Hand(asList(
+                threeOf(Spades),
+                fiveOf(Spades),
+                sevenOf(Spades)
+        ));
+
+        RuleEngine ruleEngine = new RuleEngine();
+        Rank maxRank = ruleEngine.evaluate(hand);
+        assertEquals(6, maxRank.getPriority());
+    }
 }

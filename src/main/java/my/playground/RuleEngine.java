@@ -11,6 +11,7 @@ import static java.util.Arrays.asList;
 public class RuleEngine {
 
     List<GameRule> gameRules = asList(
+            new FlushRule(),
             new StraightRule(),
             new ThreeOfKindRule(),
             new PairRule(),
