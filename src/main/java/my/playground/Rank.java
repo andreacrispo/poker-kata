@@ -1,7 +1,6 @@
 package my.playground;
-
-
 import java.util.Objects;
+
 
 public class Rank implements Comparable<Rank> {
 
@@ -23,6 +22,10 @@ public class Rank implements Comparable<Rank> {
 
     public static Rank threeOfKind(Card card) {
         return new ThreeOfKind(card);
+    }
+
+    public static Rank straight(Card card) {
+        return new Straight(card);
     }
 
     public Integer getPriority() {
@@ -68,7 +71,7 @@ public class Rank implements Comparable<Rank> {
     public static class HighCard extends  Rank{
         Card card;
         public HighCard(Card card) {
-            super(1, card.getValue());
+            super(RankValue.HighCard.numericValue, card.getValue());
             this.card = card;
         }
 
@@ -82,7 +85,7 @@ public class Rank implements Comparable<Rank> {
         Card cardOne;
         Card cardTwo;
         public Pair(Card cardOne, Card CardTwo) {
-            super(2, cardOne.getValue());
+            super(RankValue.Pair.numericValue, cardOne.getValue());
             this.cardOne = cardOne;
             this.cardTwo = cardTwo;
         }
@@ -93,16 +96,56 @@ public class Rank implements Comparable<Rank> {
         }
     }
 
+    private static class DoublePair extends Rank {
+        Card card;
+        public DoublePair(Card card) {
+            super(RankValue.DoublePair.numericValue, card.getValue());
+            this.card = card;
+        }
+
+        @Override
+        public String toString() {
+            return "double pair: " + card.getValue();
+        }
+    }
+
     private static class ThreeOfKind extends Rank {
         Card card;
         public ThreeOfKind(Card card) {
-            super(3, card.getValue());
+            super(RankValue.ThreeOfKind.numericValue, card.getValue());
             this.card = card;
         }
 
         @Override
         public String toString() {
             return "three of kind: " + card.getValue();
+        }
+    }
+
+    private static class Straight extends Rank {
+        Card card;
+        public Straight(Card card) {
+            super(RankValue.Straight.numericValue, card.getValue());
+            this.card = card;
+        }
+
+        @Override
+        public String toString() {
+            return "straight: " + card.getValue();
+        }
+    }
+
+
+    public enum RankValue {
+        HighCard(1),
+        Pair(2),
+        DoublePair(3),
+        ThreeOfKind(4),
+        Straight(5);
+
+        public final Integer numericValue;
+        RankValue(int numValue){
+            this.numericValue = numValue;
         }
     }
 }

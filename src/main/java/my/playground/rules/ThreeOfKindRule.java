@@ -8,8 +8,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
+/**
+ * Three of a Kind: Three of the cards in the hand have the same value.
+ * Hands which both contain three of a kind are ranked by the value of the 3 cards.
+ */
 public class ThreeOfKindRule implements GameRule {
 
     @Override

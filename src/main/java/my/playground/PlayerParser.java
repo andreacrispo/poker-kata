@@ -7,7 +7,7 @@ public class PlayerParser {
     private static String PLAYER_NAME_SEPARATOR = ":";
     private static String CARD_SEPARATOR = " ";
 
-    public static Player createFromString(String playerString) {
+    public static Player fromString(String playerString) {
         String[] nameCardsSplit = playerString.split(PLAYER_NAME_SEPARATOR);
         String playerName = nameCardsSplit[0].substring(0, nameCardsSplit[0].length());
         String cardsString = nameCardsSplit[1].substring(1);

@@ -1,11 +1,8 @@
 package my.playground.rules;
 
-import my.playground.Card;
 import my.playground.Hand;
 import my.playground.Rank;
 
-import java.util.List;
-import java.util.Optional;
 
 /**
  * Hands which do not fit any higher category are ranked by the value of their highest card.
@@ -15,9 +12,6 @@ public class HighCardRule implements GameRule {
 
     @Override
     public Rank evaluate(Hand hand) {
-        List<Card> cards = hand.getCards();
-
-        Optional<Card> highestCard = cards.stream().max(Card::compareTo);
-        return highestCard.map(Rank::highCard).orElse(null);
+        return Rank.highCard(hand.getHighestCard());
     }
 }

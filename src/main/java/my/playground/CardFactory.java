@@ -11,6 +11,13 @@ public class CardFactory {
         put('5', Card.CardValue.Five);
         put('6', Card.CardValue.Six);
         put('7', Card.CardValue.Seven);
+        put('8', Card.CardValue.Eight);
+        put('9', Card.CardValue.Nine);
+        put('T', Card.CardValue.Ten);
+        put('J', Card.CardValue.Jack);
+        put('Q', Card.CardValue.Queen);
+        put('K', Card.CardValue.King);
+        put('A', Card.CardValue.Ace);
     }};
 
     private static final Map<Character, Card.Suit> suitMapper = new HashMap<Character, Card.Suit>() {{

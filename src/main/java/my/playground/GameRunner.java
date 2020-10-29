@@ -29,6 +29,6 @@ public class GameRunner {
     }
 
     private Player getPlayer(String playerString) {
-        return  PlayerParser.createFromString(playerString);
+        return  PlayerParser.fromString(playerString);
     }
 }
