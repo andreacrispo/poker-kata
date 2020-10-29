@@ -14,6 +14,7 @@ public class RuleEngine {
             new FlushRule(),
             new StraightRule(),
             new ThreeOfKindRule(),
+            new TwoPairRules(),
             new PairRule(),
             new HighCardRule()
     );

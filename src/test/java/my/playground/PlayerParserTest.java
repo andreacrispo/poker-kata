@@ -40,4 +40,15 @@ public class PlayerParserTest {
         assertEquals(cardTwo, player.getHand().getCards().get(1));
         assertEquals(cardThree, player.getHand().getCards().get(2));
     }
+
+    @Test
+    public void expect_one_player_with_four_card() {
+        String playerString = "Frank: 2D 7H 5C 9C";
+        Player player = PlayerParser.fromString(playerString);
+        assertEquals("Frank", player.getName());
+        assertEquals(twoOf(Diamonds), player.getHand().getCards().get(0));
+        assertEquals(sevenOf(Hearts), player.getHand().getCards().get(1));
+        assertEquals(fiveOf(Clubs), player.getHand().getCards().get(2));
+        assertEquals(nineOf(Clubs), player.getHand().getCards().get(3));
+    }
 }

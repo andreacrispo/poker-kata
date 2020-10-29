@@ -32,6 +32,10 @@ public class Rank implements Comparable<Rank> {
         return new Flush(card);
     }
 
+    public static Rank twoPair(Card card) {
+        return new TwoPair(card);
+    }
+
     public Integer getPriority() {
         return priority;
     }
@@ -103,7 +107,7 @@ public class Rank implements Comparable<Rank> {
     private static class DoublePair extends Rank {
         Card card;
         public DoublePair(Card card) {
-            super(RankValue.DoublePair.numericValue, card.getValue());
+            super(RankValue.TwoPair.numericValue, card.getValue());
             this.card = card;
         }
 
@@ -152,10 +156,23 @@ public class Rank implements Comparable<Rank> {
         }
     }
 
+    private static class TwoPair extends Rank {
+        Card card;
+        public TwoPair(Card card) {
+            super(RankValue.TwoPair.numericValue, card.getValue());
+            this.card = card;
+        }
+
+        @Override
+        public String toString() {
+            return "two pair: " + card.getValue();
+        }
+    }
+
     public enum RankValue {
         HighCard(1),
         Pair(2),
-        DoublePair(3),
+        TwoPair(3),
         ThreeOfKind(4),
         Straight(5),
         Flush(6);

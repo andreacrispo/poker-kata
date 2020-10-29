@@ -46,9 +46,16 @@ public class CardFactory {
     public static Card fiveOf(Card.Suit suit) {
         return new Card(Card.CardValue.Five, suit);
     }
-
+    public static Card sixOf(Card.Suit suit) {
+        return new Card(Card.CardValue.Six, suit);
+    }
     public static Card sevenOf(Card.Suit suit) {
         return new Card(Card.CardValue.Seven, suit);
     }
-
+    public static Card eightOf(Card.Suit suit) {
+        return new Card(Card.CardValue.Eight, suit);
+    }
+    public static Card nineOf(Card.Suit suit) {
+        return new Card(Card.CardValue.Nine, suit);
+    }
 }
