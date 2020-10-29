@@ -3,6 +3,7 @@ package my.playground;
 import my.playground.rules.GameRule;
 import my.playground.rules.HighCardRule;
 import my.playground.rules.PairRule;
+import my.playground.rules.ThreeOfKindRule;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,6 +14,7 @@ import static java.util.Arrays.asList;
 public class RuleEngine {
 
     List<GameRule> gameRules = asList(
+            new ThreeOfKindRule(),
             new PairRule(),
             new HighCardRule()
     );

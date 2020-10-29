@@ -28,6 +28,16 @@ public class GameRunnerTest {
         assertEquals(expectedResult, result);
     }
 
+    @Test
+    public void expect_player_two_win_with_three_of_kind() {
+        String gameInput = "Black: 7H 3D 3H  White: 4C 4H 4D";
+        GameRunner gameRunner = new GameRunner();
+
+        String result = gameRunner.run(gameInput);
+
+        String expectedResult = "White wins. - with three of kind: Four";
+        assertEquals(expectedResult, result);
+    }
 
 
     @Test

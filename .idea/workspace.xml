@@ -15,8 +15,8 @@
       <list>
         <option value="Interface" />
         <option value="Enum" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -48,7 +48,7 @@
       <recent name="my.playground" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GameRunnerTest">
+  <component name="RunManager" selected="JUnit.my.playground in poker.kata">
     <configuration name="GameRunnerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="poker.kata" />
       <extension name="coverage">
@@ -64,7 +64,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlayerParserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RuleEngineTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="poker.kata" />
       <extension name="coverage">
         <pattern>
@@ -73,13 +73,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="my.playground" />
-      <option name="MAIN_CLASS_NAME" value="my.playground.PlayerParserTest" />
+      <option name="MAIN_CLASS_NAME" value="my.playground.RuleEngineTest" />
+      <option name="METHOD_NAME" value="test_hand_with_three_of_kind_of_five" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RuleEngineTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RuleEngineTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="poker.kata" />
       <extension name="coverage">
         <pattern>
@@ -96,21 +97,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RuleEngineTest.test_hand_with_highCard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RuleEngineTest.test_hand_with_three_of_kind_of_five" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="poker.kata" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="my.playground.rules.*" />
+          <option name="PATTERN" value="my.playground.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="my.playground" />
       <option name="MAIN_CLASS_NAME" value="my.playground.RuleEngineTest" />
-      <option name="METHOD_NAME" value="test_hand_with_highCard" />
+      <option name="METHOD_NAME" value="test_hand_with_three_of_kind_of_five" />
       <option name="TEST_OBJECT" value="method" />
-      <uniqueIds>
-        <uniqueId value="[engine:junit-vintage]/[runner:my.playground.RuleEngineTest]" />
-      </uniqueIds>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -131,11 +129,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.GameRunnerTest" />
         <item itemvalue="JUnit.my.playground in poker.kata" />
-        <item itemvalue="JUnit.PlayerParserTest" />
         <item itemvalue="JUnit.RuleEngineTest (1)" />
-        <item itemvalue="JUnit.RuleEngineTest.test_hand_with_highCard" />
+        <item itemvalue="JUnit.RuleEngineTest.test_hand_with_three_of_kind_of_five" />
+        <item itemvalue="JUnit.GameRunnerTest" />
+        <item itemvalue="JUnit.RuleEngineTest" />
       </list>
     </recent_temporary>
   </component>
@@ -155,10 +153,10 @@
       <screen x="0" y="0" width="1920" height="1038" />
     </state>
     <state x="418" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1038@0.0.1920.1038" timestamp="1603998830211" />
-    <state x="768" y="226" width="565" height="583" key="#com.intellij.ide.util.MemberChooser" timestamp="1603997323342">
+    <state x="768" y="226" width="565" height="583" key="#com.intellij.ide.util.MemberChooser" timestamp="1604005812470">
       <screen x="0" y="0" width="1920" height="1038" />
     </state>
-    <state x="768" y="226" width="565" height="583" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1038@0.0.1920.1038" timestamp="1603997323342" />
+    <state x="768" y="226" width="565" height="583" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1038@0.0.1920.1038" timestamp="1604005812469" />
     <state x="688" y="296" width="524" height="442" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1603992741698">
       <screen x="0" y="0" width="1920" height="1038" />
     </state>
@@ -167,42 +165,46 @@
       <screen x="0" y="0" width="1920" height="1038" />
     </state>
     <state x="693" y="268" width="524" height="500" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1038@0.0.1920.1038" timestamp="1603995638868" />
+    <state x="718" y="263" key="#xdebugger.evaluate" timestamp="1604006534375">
+      <screen x="0" y="0" width="1920" height="1038" />
+    </state>
+    <state x="718" y="263" key="#xdebugger.evaluate/0.0.1920.1038@0.0.1920.1038" timestamp="1604006534375" />
     <state width="490" height="506" key="DebuggerActiveHint" timestamp="1603998373038">
       <screen x="0" y="0" width="1920" height="1038" />
     </state>
     <state width="490" height="506" key="DebuggerActiveHint/0.0.1920.1038@0.0.1920.1038" timestamp="1603998373038" />
-    <state width="1874" height="273" key="GridCell.Tab.0.bottom" timestamp="1604003474418">
+    <state width="1874" height="338" key="GridCell.Tab.0.bottom" timestamp="1604006698264">
       <screen x="0" y="0" width="1920" height="1038" />
     </state>
-    <state width="1874" height="273" key="GridCell.Tab.0.bottom/0.0.1920.1038@0.0.1920.1038" timestamp="1604003474418" />
-    <state width="1874" height="273" key="GridCell.Tab.0.center" timestamp="1604003474416">
+    <state width="1874" height="338" key="GridCell.Tab.0.bottom/0.0.1920.1038@0.0.1920.1038" timestamp="1604006698264" />
+    <state width="1874" height="338" key="GridCell.Tab.0.center" timestamp="1604006698263">
       <screen x="0" y="0" width="1920" height="1038" />
     </state>
-    <state width="1874" height="273" key="GridCell.Tab.0.center/0.0.1920.1038@0.0.1920.1038" timestamp="1604003474416" />
-    <state width="1874" height="273" key="GridCell.Tab.0.left" timestamp="1604003474415">
+    <state width="1874" height="338" key="GridCell.Tab.0.center/0.0.1920.1038@0.0.1920.1038" timestamp="1604006698263" />
+    <state width="1874" height="338" key="GridCell.Tab.0.left" timestamp="1604006698262">
       <screen x="0" y="0" width="1920" height="1038" />
     </state>
-    <state width="1874" height="273" key="GridCell.Tab.0.left/0.0.1920.1038@0.0.1920.1038" timestamp="1604003474415" />
-    <state width="1874" height="273" key="GridCell.Tab.0.right" timestamp="1604003474417">
+    <state width="1874" height="338" key="GridCell.Tab.0.left/0.0.1920.1038@0.0.1920.1038" timestamp="1604006698262" />
+    <state width="1874" height="338" key="GridCell.Tab.0.right" timestamp="1604006698263">
       <screen x="0" y="0" width="1920" height="1038" />
     </state>
-    <state width="1874" height="273" key="GridCell.Tab.0.right/0.0.1920.1038@0.0.1920.1038" timestamp="1604003474417" />
-    <state width="1874" height="338" key="GridCell.Tab.1.bottom" timestamp="1604003275208">
+    <state width="1874" height="338" key="GridCell.Tab.0.right/0.0.1920.1038@0.0.1920.1038" timestamp="1604006698263" />
+    <state width="1874" height="338" key="GridCell.Tab.1.bottom" timestamp="1604006698113">
       <screen x="0" y="0" width="1920" height="1038" />
     </state>
-    <state width="1874" height="338" key="GridCell.Tab.1.bottom/0.0.1920.1038@0.0.1920.1038" timestamp="1604003275208" />
-    <state width="1874" height="338" key="GridCell.Tab.1.center" timestamp="1604003275207">
+    <state width="1874" height="338" key="GridCell.Tab.1.bottom/0.0.1920.1038@0.0.1920.1038" timestamp="1604006698113" />
+    <state width="1874" height="338" key="GridCell.Tab.1.center" timestamp="1604006698113">
       <screen x="0" y="0" width="1920" height="1038" />
     </state>
-    <state width="1874" height="338" key="GridCell.Tab.1.center/0.0.1920.1038@0.0.1920.1038" timestamp="1604003275207" />
-    <state width="1874" height="338" key="GridCell.Tab.1.left" timestamp="1604003275207">
+    <state width="1874" height="338" key="GridCell.Tab.1.center/0.0.1920.1038@0.0.1920.1038" timestamp="1604006698113" />
+    <state width="1874" height="338" key="GridCell.Tab.1.left" timestamp="1604006698113">
       <screen x="0" y="0" width="1920" height="1038" />
     </state>
-    <state width="1874" height="338" key="GridCell.Tab.1.left/0.0.1920.1038@0.0.1920.1038" timestamp="1604003275207" />
-    <state width="1874" height="338" key="GridCell.Tab.1.right" timestamp="1604003275207">
+    <state width="1874" height="338" key="GridCell.Tab.1.left/0.0.1920.1038@0.0.1920.1038" timestamp="1604006698113" />
+    <state width="1874" height="338" key="GridCell.Tab.1.right" timestamp="1604006698113">
       <screen x="0" y="0" width="1920" height="1038" />
     </state>
-    <state width="1874" height="338" key="GridCell.Tab.1.right/0.0.1920.1038@0.0.1920.1038" timestamp="1604003275207" />
+    <state width="1874" height="338" key="GridCell.Tab.1.right/0.0.1920.1038@0.0.1920.1038" timestamp="1604006698113" />
     <state x="100" y="100" width="1720" height="838" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1604004587263">
       <screen x="0" y="0" width="1920" height="1038" />
     </state>
@@ -211,18 +213,18 @@
       <screen x="0" y="0" width="1920" height="1038" />
     </state>
     <state x="927" y="303" width="497" height="358" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1038@0.0.1920.1038" timestamp="1604003496343" />
-    <state x="623" y="228" width="672" height="678" key="search.everywhere.popup" timestamp="1604003224474">
+    <state x="623" y="228" width="672" height="678" key="search.everywhere.popup" timestamp="1604006288769">
       <screen x="0" y="0" width="1920" height="1038" />
     </state>
-    <state x="623" y="228" width="672" height="678" key="search.everywhere.popup/0.0.1920.1038@0.0.1920.1038" timestamp="1604003224474" />
+    <state x="623" y="228" width="672" height="678" key="search.everywhere.popup/0.0.1920.1038@0.0.1920.1038" timestamp="1604006288769" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/my/playground/rules/HighCardRule.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="2" />
+          <url>file://$PROJECT_DIR$/src/main/java/my/playground/rules/ThreeOfKindRule.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

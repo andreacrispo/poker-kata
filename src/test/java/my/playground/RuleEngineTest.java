@@ -5,17 +5,17 @@ import org.junit.Test;
 
 import static java.util.Arrays.asList;
 import static my.playground.Card.Suit.*;
-import static my.playground.CardFactory.sevenOf;
-import static my.playground.CardFactory.twoOf;
+import static my.playground.CardFactory.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class RuleEngineTest {
 
 
     @Test
-    public void test_hand_with_highCard() {
+    public void test_hand_with_highCard_seven() {
         Hand hand = new Hand(asList(
                 twoOf(Diamonds),
+                fourOf(Hearts),
                 sevenOf(Clubs)
         ));
         RuleEngine ruleEngine = new RuleEngine();
@@ -33,6 +33,7 @@ public class RuleEngineTest {
     public void test_hand_with_pair_of_two() {
         Hand hand = new Hand(asList(
                 twoOf(Spades),
+                threeOf(Spades),
                 twoOf(Clubs)
         ));
 
@@ -42,5 +43,21 @@ public class RuleEngineTest {
 
         assertEquals(2, maxRank.getPriority());
         assertEquals(Rank.Pair.class, maxRank.getClass());
+    }
+
+
+    @Test
+    public void test_hand_with_three_of_kind_of_five() {
+        Hand hand = new Hand(asList(
+                fiveOf(Spades),
+                fiveOf(Hearts),
+                fiveOf(Clubs)
+        ));
+
+        RuleEngine ruleEngine = new RuleEngine();
+
+        Rank maxRank = ruleEngine.evaluate(hand);
+
+        assertEquals(3, maxRank.getPriority());
     }
 }

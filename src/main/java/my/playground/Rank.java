@@ -21,6 +21,10 @@ public class Rank implements Comparable<Rank> {
         return new Pair(cardOne, cardTwo);
     }
 
+    public static Rank threeOfKind(Card card) {
+        return new ThreeOfKind(card);
+    }
+
     public Integer getPriority() {
         return priority;
     }
@@ -89,6 +93,18 @@ public class Rank implements Comparable<Rank> {
         }
     }
 
+    private static class ThreeOfKind extends Rank {
+        Card card;
+        public ThreeOfKind(Card card) {
+            super(3, card.getValue());
+            this.card = card;
+        }
+
+        @Override
+        public String toString() {
+            return "three of kind: " + card.getValue();
+        }
+    }
 }
 
 

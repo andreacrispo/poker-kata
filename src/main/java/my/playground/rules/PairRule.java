@@ -6,6 +6,8 @@ import my.playground.Rank;
 
 import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 /**
  * Pair: 2 of the 5 cards in the hand have the same value.
@@ -18,11 +20,12 @@ public class PairRule implements GameRule {
     public Rank evaluate(Hand hand) {
         List<Card> cards = hand.getCards();
 
-        Card cardOne = cards.get(0);
-        Card cardTwo = cards.get(1);
-        if(cardOne.compareTo(cardTwo) == 0)
-            return Rank.pair(cardOne, cardTwo);
-
+        Set<Integer> uniqueValues = new HashSet<>();
+        for (Card card: cards) {
+            if(!uniqueValues.add(card.getValue().numericValue)) {
+                return Rank.pair(card, card);
+            }
+        }
         return null;
     }
 }

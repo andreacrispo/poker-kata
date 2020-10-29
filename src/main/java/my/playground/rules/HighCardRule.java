@@ -18,9 +18,6 @@ public class HighCardRule implements GameRule {
         List<Card> cards = hand.getCards();
 
         Optional<Card> highestCard = cards.stream().max(Card::compareTo);
-        if(highestCard.isPresent()){
-            return Rank.highCard(highestCard.get());
-        }
-        return null;
+        return highestCard.map(Rank::highCard).orElse(null);
     }
 }
