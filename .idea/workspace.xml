@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9f01beff-0d56-4156-ba30-9d1da412fe18" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1jYspGKjGLoTHxCdpMBB2Vwc7GV" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="my.playground" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="my.playground" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.GameRunnerTest">
+    <configuration name="GameRunnerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="poker.kata" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="my.playground.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="my.playground" />
+      <option name="MAIN_CLASS_NAME" value="my.playground.GameRunnerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlayerParserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="poker.kata" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="my.playground.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="my.playground" />
+      <option name="MAIN_CLASS_NAME" value="my.playground.PlayerParserTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RuleEngineTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="poker.kata" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="my.playground.rules.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="my.playground" />
+      <option name="TEST_OBJECT" value="uniqueId" />
+      <uniqueIds>
+        <uniqueId value="[engine:junit-vintage]/[runner:my.playground.RuleEngineTest]" />
+      </uniqueIds>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RuleEngineTest.test_hand_with_highCard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="poker.kata" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="my.playground.rules.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="my.playground" />
+      <option name="MAIN_CLASS_NAME" value="my.playground.RuleEngineTest" />
+      <option name="METHOD_NAME" value="test_hand_with_highCard" />
+      <option name="TEST_OBJECT" value="method" />
+      <uniqueIds>
+        <uniqueId value="[engine:junit-vintage]/[runner:my.playground.RuleEngineTest]" />
+      </uniqueIds>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="my.playground in poker.kata" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="poker.kata" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="my.playground.rules.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="my.playground" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.GameRunnerTest" />
+        <item itemvalue="JUnit.my.playground in poker.kata" />
+        <item itemvalue="JUnit.PlayerParserTest" />
+        <item itemvalue="JUnit.RuleEngineTest (1)" />
+        <item itemvalue="JUnit.RuleEngineTest.test_hand_with_highCard" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9f01beff-0d56-4156-ba30-9d1da412fe18" name="Default Changelist" comment="" />
+      <created>1603992541793</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603992541793</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="418" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603998830211">
+      <screen x="0" y="0" width="1920" height="1038" />
+    </state>
+    <state x="418" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1038@0.0.1920.1038" timestamp="1603998830211" />
+    <state x="768" y="226" width="565" height="583" key="#com.intellij.ide.util.MemberChooser" timestamp="1603997323342">
+      <screen x="0" y="0" width="1920" height="1038" />
+    </state>
+    <state x="768" y="226" width="565" height="583" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1038@0.0.1920.1038" timestamp="1603997323342" />
+    <state x="688" y="296" width="524" height="442" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1603992741698">
+      <screen x="0" y="0" width="1920" height="1038" />
+    </state>
+    <state x="688" y="296" width="524" height="442" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1920.1038@0.0.1920.1038" timestamp="1603992741698" />
+    <state x="693" y="268" width="524" height="500" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1603995638868">
+      <screen x="0" y="0" width="1920" height="1038" />
+    </state>
+    <state x="693" y="268" width="524" height="500" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1038@0.0.1920.1038" timestamp="1603995638868" />
+    <state width="490" height="506" key="DebuggerActiveHint" timestamp="1603998373038">
+      <screen x="0" y="0" width="1920" height="1038" />
+    </state>
+    <state width="490" height="506" key="DebuggerActiveHint/0.0.1920.1038@0.0.1920.1038" timestamp="1603998373038" />
+    <state width="1874" height="273" key="GridCell.Tab.0.bottom" timestamp="1604003474418">
+      <screen x="0" y="0" width="1920" height="1038" />
+    </state>
+    <state width="1874" height="273" key="GridCell.Tab.0.bottom/0.0.1920.1038@0.0.1920.1038" timestamp="1604003474418" />
+    <state width="1874" height="273" key="GridCell.Tab.0.center" timestamp="1604003474416">
+      <screen x="0" y="0" width="1920" height="1038" />
+    </state>
+    <state width="1874" height="273" key="GridCell.Tab.0.center/0.0.1920.1038@0.0.1920.1038" timestamp="1604003474416" />
+    <state width="1874" height="273" key="GridCell.Tab.0.left" timestamp="1604003474415">
+      <screen x="0" y="0" width="1920" height="1038" />
+    </state>
+    <state width="1874" height="273" key="GridCell.Tab.0.left/0.0.1920.1038@0.0.1920.1038" timestamp="1604003474415" />
+    <state width="1874" height="273" key="GridCell.Tab.0.right" timestamp="1604003474417">
+      <screen x="0" y="0" width="1920" height="1038" />
+    </state>
+    <state width="1874" height="273" key="GridCell.Tab.0.right/0.0.1920.1038@0.0.1920.1038" timestamp="1604003474417" />
+    <state width="1874" height="338" key="GridCell.Tab.1.bottom" timestamp="1604003275208">
+      <screen x="0" y="0" width="1920" height="1038" />
+    </state>
+    <state width="1874" height="338" key="GridCell.Tab.1.bottom/0.0.1920.1038@0.0.1920.1038" timestamp="1604003275208" />
+    <state width="1874" height="338" key="GridCell.Tab.1.center" timestamp="1604003275207">
+      <screen x="0" y="0" width="1920" height="1038" />
+    </state>
+    <state width="1874" height="338" key="GridCell.Tab.1.center/0.0.1920.1038@0.0.1920.1038" timestamp="1604003275207" />
+    <state width="1874" height="338" key="GridCell.Tab.1.left" timestamp="1604003275207">
+      <screen x="0" y="0" width="1920" height="1038" />
+    </state>
+    <state width="1874" height="338" key="GridCell.Tab.1.left/0.0.1920.1038@0.0.1920.1038" timestamp="1604003275207" />
+    <state width="1874" height="338" key="GridCell.Tab.1.right" timestamp="1604003275207">
+      <screen x="0" y="0" width="1920" height="1038" />
+    </state>
+    <state width="1874" height="338" key="GridCell.Tab.1.right/0.0.1920.1038@0.0.1920.1038" timestamp="1604003275207" />
+    <state x="100" y="100" width="1720" height="838" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1604004587263">
+      <screen x="0" y="0" width="1920" height="1038" />
+    </state>
+    <state x="100" y="100" width="1720" height="838" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1038@0.0.1920.1038" timestamp="1604004587263" />
+    <state x="927" y="303" width="497" height="358" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1604003496343">
+      <screen x="0" y="0" width="1920" height="1038" />
+    </state>
+    <state x="927" y="303" width="497" height="358" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1038@0.0.1920.1038" timestamp="1604003496343" />
+    <state x="623" y="228" width="672" height="678" key="search.everywhere.popup" timestamp="1604003224474">
+      <screen x="0" y="0" width="1920" height="1038" />
+    </state>
+    <state x="623" y="228" width="672" height="678" key="search.everywhere.popup/0.0.1920.1038@0.0.1920.1038" timestamp="1604003224474" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/my/playground/rules/HighCardRule.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="highestCard.map(Rank::highCard).orElse(null)" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>
