@@ -8,6 +8,8 @@ public class Hand {
 
     private List<Card> cards;
 
+    private Map<Card.CardValue,List<Card>> _cardGroupByValue;
+
     public Hand(List<Card> cards) {
         this.cards = this.sortedList(cards);
     }
@@ -26,22 +28,12 @@ public class Hand {
                     .get();
     }
 
-    public Map<Card.CardValue, Integer> cardValuesOccurrences() {
-        Map<Card.CardValue, Integer> occurrences = new HashMap<>();
-
-        for(Card card : getCards()){
-            if(occurrences.containsKey(card.getValue())){
-                occurrences.put(card.getValue(), occurrences.get(card.getValue()) +1);
-            }else {
-                occurrences.put(card.getValue(), 1);
-            }
-        }
-        return occurrences;
-    }
-
     public Map<Card.CardValue,List<Card>> cardGroupByValue() {
-        return cards.stream()
+        if(_cardGroupByValue == null) {
+            _cardGroupByValue = cards.stream()
                     .collect(groupingBy(Card::getValue, LinkedHashMap::new, Collectors.toList()));
+        }
+        return _cardGroupByValue;
     }
 
     public  List<Card> sortedList(List<Card> cards) {
