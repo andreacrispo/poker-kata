@@ -9,7 +9,7 @@ public class PlayerParser {
 
     public static Player fromString(String playerString) {
         String[] nameCardsSplit = playerString.split(PLAYER_NAME_SEPARATOR);
-        String playerName = nameCardsSplit[0].substring(0, nameCardsSplit[0].length());
+        String playerName = nameCardsSplit[0];
         String cardsString = nameCardsSplit[1].substring(1);
 
         return new Player(playerName, new Hand(getCardList(cardsString)));

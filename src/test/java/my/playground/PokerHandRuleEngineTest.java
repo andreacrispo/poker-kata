@@ -7,7 +7,7 @@ import static my.playground.Card.Suit.*;
 import static my.playground.CardFactory.*;
 import static org.junit.jupiter.api.Assertions.*;
 
-public class RuleEngineTest {
+public class PokerHandRuleEngineTest {
 
 
     @Test
@@ -19,7 +19,7 @@ public class RuleEngineTest {
                 fiveOf(Clubs),
                 sixOf(Diamonds)
         ));
-        RuleEngine ruleEngine = new RuleEngine();
+        PokerHandRuleEngine ruleEngine = new PokerHandRuleEngine();
 
         Rank maxRank = ruleEngine.evaluate(hand);
 
@@ -40,7 +40,7 @@ public class RuleEngineTest {
                 aceOf(Hearts)
         ));
 
-        RuleEngine ruleEngine = new RuleEngine();
+        PokerHandRuleEngine ruleEngine = new PokerHandRuleEngine();
 
         Rank maxRank = ruleEngine.evaluate(hand);
 
@@ -59,7 +59,7 @@ public class RuleEngineTest {
                 sevenOf(Diamonds)
         ));
 
-        RuleEngine ruleEngine = new RuleEngine();
+        PokerHandRuleEngine ruleEngine = new PokerHandRuleEngine();
 
         Rank maxRank = ruleEngine.evaluate(hand);
 
@@ -78,7 +78,7 @@ public class RuleEngineTest {
                 aceOf(Hearts)
         ));
 
-        RuleEngine ruleEngine = new RuleEngine();
+        PokerHandRuleEngine ruleEngine = new PokerHandRuleEngine();
         Rank maxRank = ruleEngine.evaluate(hand);
         assertEquals(4, maxRank.getPriority());
     }
@@ -94,7 +94,7 @@ public class RuleEngineTest {
                 sevenOf(Spades)
         ));
 
-        RuleEngine ruleEngine = new RuleEngine();
+        PokerHandRuleEngine ruleEngine = new PokerHandRuleEngine();
         Rank maxRank = ruleEngine.evaluate(hand);
         assertEquals(5, maxRank.getPriority());
     }
@@ -110,7 +110,7 @@ public class RuleEngineTest {
                 sevenOf(Spades)
         ));
 
-        RuleEngine ruleEngine = new RuleEngine();
+        PokerHandRuleEngine ruleEngine = new PokerHandRuleEngine();
         Rank maxRank = ruleEngine.evaluate(hand);
         assertEquals(6, maxRank.getPriority());
     }
@@ -125,7 +125,7 @@ public class RuleEngineTest {
                 twoOf(Diamonds)
         ));
 
-        RuleEngine ruleEngine = new RuleEngine();
+        PokerHandRuleEngine ruleEngine = new PokerHandRuleEngine();
         Rank maxRank = ruleEngine.evaluate(hand);
         assertEquals(8, maxRank.getPriority());
         assertEquals("four of kind: Three", maxRank.toString());
@@ -141,7 +141,7 @@ public class RuleEngineTest {
                 kingOf(Spades)
         ));
 
-        RuleEngine ruleEngine = new RuleEngine();
+        PokerHandRuleEngine ruleEngine = new PokerHandRuleEngine();
         Rank maxRank = ruleEngine.evaluate(hand);
         assertEquals(7, maxRank.getPriority());
         assertEquals("full house", maxRank.toString());
@@ -158,7 +158,7 @@ public class RuleEngineTest {
                 sixOf(Spades)
         ));
 
-        RuleEngine ruleEngine = new RuleEngine();
+        PokerHandRuleEngine ruleEngine = new PokerHandRuleEngine();
         Rank maxRank = ruleEngine.evaluate(hand);
         assertEquals(9, maxRank.getPriority());
         assertEquals("straight flush", maxRank.toString());

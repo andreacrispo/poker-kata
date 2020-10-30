@@ -9,23 +9,11 @@ public class GameRunner {
         Player playerOne = getPlayer(playerSplit[0]);
         Player playerTwo = getPlayer(playerSplit[1]);
 
-        RuleEngine ruleEngine = new RuleEngine();
+        Game game = new Game(new PokerHandRuleEngine());
 
-        Rank playerOneRank = ruleEngine.evaluate(playerOne.getHand());
-        Rank playerTwoRank = ruleEngine.evaluate(playerTwo.getHand());
+        GameResult result = game.play(playerOne, playerTwo);
 
-        String gameResult = "";
-        if(playerOneRank.isHigherThen(playerTwoRank)) {
-            gameResult = playerOne.getName() + " wins. - with " + playerOneRank.toString();
-        } else if(playerTwoRank.isHigherThen(playerOneRank)) {
-            gameResult = playerTwo.getName() + " wins. - with " + playerTwoRank.toString();
-        }else {
-            gameResult =  "Tie. - with " + playerOneRank.toString();
-        }
-        System.out.println(gameResult);
-
-
-        return gameResult;
+        return result.toString();
     }
 
     private Player getPlayer(String playerString) {
