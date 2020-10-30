@@ -137,5 +137,21 @@ public class RuleEngineTest {
     }
 
 
+    @Test
+    public void test_hand_with_straight_flush() {
+        Hand hand = new Hand(asList(
+                threeOf(Spades),
+                twoOf(Spades),
+                fiveOf(Spades),
+                fourOf(Spades),
+                sixOf(Spades)
+        ));
+
+        RuleEngine ruleEngine = new RuleEngine();
+        Rank maxRank = ruleEngine.evaluate(hand);
+        assertEquals(9, maxRank.getPriority());
+        assertEquals("straight flush", maxRank.toString());
+    }
+
 
 }

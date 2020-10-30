@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f01beff-0d56-4156-ba30-9d1da412fe18" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/my/playground/rules/FullHouseRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/playground/CardFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/playground/CardFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/my/playground/rules/StraightFlushRule.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/my/playground/Rank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/playground/Rank.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/my/playground/RuleEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/playground/RuleEngine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/playground/rules/FourOfKindRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/playground/rules/FourOfKindRule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/my/playground/rules/FullHouseRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/playground/rules/FullHouseRule.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/my/playground/GameRunnerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/my/playground/GameRunnerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/my/playground/PlayerParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/my/playground/PlayerParserTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/my/playground/RuleEngineTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/my/playground/RuleEngineTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +72,7 @@
       <module name="poker.kata" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="my.playground.*" />
+          <option name="PATTERN" value="my.playground.rules.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -90,7 +88,7 @@
       <module name="poker.kata" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="my.playground.*" />
+          <option name="PATTERN" value="my.playground.rules.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -106,7 +104,7 @@
       <module name="poker.kata" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="my.playground.*" />
+          <option name="PATTERN" value="my.playground.rules.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -158,10 +156,10 @@
       <screen x="0" y="0" width="1920" height="1038" />
     </state>
     <state x="418" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1038@0.0.1920.1038" timestamp="1603998830211" />
-    <state x="640" y="187" width="374" height="583" key="#com.intellij.ide.util.MemberChooser" timestamp="1604073036996">
+    <state x="640" y="187" width="374" height="583" key="#com.intellij.ide.util.MemberChooser" timestamp="1604073880598">
       <screen x="0" y="0" width="1600" height="858" />
     </state>
-    <state x="640" y="187" width="374" height="583" key="#com.intellij.ide.util.MemberChooser/0.0.1600.858@0.0.1600.858" timestamp="1604073036996" />
+    <state x="640" y="187" width="374" height="583" key="#com.intellij.ide.util.MemberChooser/0.0.1600.858@0.0.1600.858" timestamp="1604073880598" />
     <state x="768" y="226" width="565" height="583" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1038@0.0.1920.1038" timestamp="1604050863517" />
     <state x="688" y="296" width="524" height="442" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1603992741698">
       <screen x="0" y="0" width="1920" height="1038" />
@@ -184,25 +182,25 @@
     </state>
     <state width="535" height="419" key="DebuggerActiveHint/0.0.1600.858@0.0.1600.858" timestamp="1604071954956" />
     <state width="490" height="506" key="DebuggerActiveHint/0.0.1920.1038@0.0.1920.1038" timestamp="1604050039002" />
-    <state width="1554" height="256" key="GridCell.Tab.0.bottom" timestamp="1604073393011">
+    <state width="1554" height="256" key="GridCell.Tab.0.bottom" timestamp="1604073696802">
       <screen x="0" y="0" width="1600" height="858" />
     </state>
-    <state width="1554" height="256" key="GridCell.Tab.0.bottom/0.0.1600.858@0.0.1600.858" timestamp="1604073393011" />
+    <state width="1554" height="256" key="GridCell.Tab.0.bottom/0.0.1600.858@0.0.1600.858" timestamp="1604073696802" />
     <state width="1874" height="273" key="GridCell.Tab.0.bottom/0.0.1920.1038@0.0.1920.1038" timestamp="1604050924404" />
-    <state width="1554" height="256" key="GridCell.Tab.0.center" timestamp="1604073393002">
+    <state width="1554" height="256" key="GridCell.Tab.0.center" timestamp="1604073696802">
       <screen x="0" y="0" width="1600" height="858" />
     </state>
-    <state width="1554" height="256" key="GridCell.Tab.0.center/0.0.1600.858@0.0.1600.858" timestamp="1604073393002" />
+    <state width="1554" height="256" key="GridCell.Tab.0.center/0.0.1600.858@0.0.1600.858" timestamp="1604073696802" />
     <state width="1874" height="273" key="GridCell.Tab.0.center/0.0.1920.1038@0.0.1920.1038" timestamp="1604050924404" />
-    <state width="1554" height="256" key="GridCell.Tab.0.left" timestamp="1604073393002">
+    <state width="1554" height="256" key="GridCell.Tab.0.left" timestamp="1604073696802">
       <screen x="0" y="0" width="1600" height="858" />
     </state>
-    <state width="1554" height="256" key="GridCell.Tab.0.left/0.0.1600.858@0.0.1600.858" timestamp="1604073393002" />
+    <state width="1554" height="256" key="GridCell.Tab.0.left/0.0.1600.858@0.0.1600.858" timestamp="1604073696802" />
     <state width="1874" height="273" key="GridCell.Tab.0.left/0.0.1920.1038@0.0.1920.1038" timestamp="1604050924404" />
-    <state width="1554" height="256" key="GridCell.Tab.0.right" timestamp="1604073393003">
+    <state width="1554" height="256" key="GridCell.Tab.0.right" timestamp="1604073696802">
       <screen x="0" y="0" width="1600" height="858" />
     </state>
-    <state width="1554" height="256" key="GridCell.Tab.0.right/0.0.1600.858@0.0.1600.858" timestamp="1604073393003" />
+    <state width="1554" height="256" key="GridCell.Tab.0.right/0.0.1600.858@0.0.1600.858" timestamp="1604073696802" />
     <state width="1874" height="273" key="GridCell.Tab.0.right/0.0.1920.1038@0.0.1920.1038" timestamp="1604050924404" />
     <state width="1554" height="266" key="GridCell.Tab.1.bottom" timestamp="1604071981098">
       <screen x="0" y="0" width="1600" height="858" />

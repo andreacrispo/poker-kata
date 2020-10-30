@@ -12,13 +12,12 @@ public class FullHouseRule implements GameRule {
 
     @Override
     public Rank evaluate(Hand hand) {
-       Rank threeOfKind = new ThreeOfKindRule().evaluate(hand);
-       Rank pair = new PairRule().evaluate(hand);
+       if(new PairRule().evaluate(hand) == null)
+           return null;
 
-       if(threeOfKind != null && pair != null) {
-           return Rank.fullHouse();
-       }
+       if(new ThreeOfKindRule().evaluate(hand) == null)
+            return null;
 
-       return null;
+        return Rank.fullHouse();
     }
 }

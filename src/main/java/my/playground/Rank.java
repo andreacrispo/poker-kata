@@ -44,6 +44,10 @@ public class Rank implements Comparable<Rank> {
         return new FullHouse();
     }
 
+    public static Rank straightFlush(Card card) {
+        return new StraightFlush(card);
+    }
+
     public Integer getPriority() {
         return priority;
     }
@@ -186,6 +190,18 @@ public class Rank implements Comparable<Rank> {
         @Override
         public String toString() {
             return "full house";
+        }
+    }
+
+    private static class StraightFlush extends Rank {
+        Card card;
+        public StraightFlush(Card card) {
+            super(RankValue.StraightFlush.numericValue, null);
+            this.card = card;
+        }
+        @Override
+        public String toString() {
+            return "straight flush";
         }
     }
 

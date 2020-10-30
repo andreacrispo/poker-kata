@@ -152,4 +152,12 @@ public class GameRunnerTest {
         String expectedResult = "Black wins. - with full house";
         assertEquals(expectedResult, result);
     }
+
+    @Test
+    public void expect_player_one_win_with_straight_flush() {
+        String gameInput = "Black: 2C 5C 3C 4C 6C  White: 2S 8S AS QS 3S 3S";
+        String result = new GameRunner().run(gameInput);
+        String expectedResult = "Black wins. - with straight flush";
+        assertEquals(expectedResult, result);
+    }
 }

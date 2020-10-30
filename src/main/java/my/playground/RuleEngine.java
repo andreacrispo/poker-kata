@@ -2,7 +2,6 @@ package my.playground;
 
 import my.playground.rules.*;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
@@ -11,6 +10,7 @@ import static java.util.Arrays.asList;
 public class RuleEngine {
 
     List<GameRule> gameRules = asList(
+            new StraightFlushRule(),
             new FourOfKindRule(),
             new FullHouseRule(),
             new FlushRule(),
