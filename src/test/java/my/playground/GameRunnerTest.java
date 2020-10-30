@@ -31,7 +31,7 @@ public class GameRunnerTest {
 
     @Test
     public void expect_player_two_win_with_three_of_kind() {
-        String gameInput = "Black: 7H 3D 3H  White: 4C 4H 4D";
+        String gameInput = "Black: 7H 3D 3H 2H 5H  White: 4C 4H 4D 5H 8H";
         GameRunner gameRunner = new GameRunner();
 
         String result = gameRunner.run(gameInput);
@@ -43,7 +43,7 @@ public class GameRunnerTest {
 
     @Test
     public void expect_tie_with_pair_of_seven_each() {
-        String gameInput = "Black: 7H 7D 2C 3S  White: 7C 7S 2C 5C";
+        String gameInput = "Black: 7H 7D 2C 3S JC  White: 7C 7S 2C 5C JC";
         GameRunner gameRunner = new GameRunner();
 
         String result = gameRunner.run(gameInput);
@@ -109,7 +109,7 @@ public class GameRunnerTest {
 
     @Test
     public void expect_player_one_win_double_pair() {
-        String gameInput = "Black: 2H 4D 2C 4C  White: 2C 6C 7C 3H";
+        String gameInput = "Black: 2H 4D 2C 4C 5C  White: 2C 6C 7C 3H 9C";
         GameRunner gameRunner = new GameRunner();
 
         String result = gameRunner.run(gameInput);
@@ -164,7 +164,14 @@ public class GameRunnerTest {
 
 
     @Test
-    @Ignore
+    public void expect_player_two_win_when_both_player_have_one_pair_evaluate_remain_card() {
+        String gameInput = "Black: 2C 2C 3C 9C 6S  White: 2S 2S 3S 5S AC";
+        String result = new GameRunner().run(gameInput);
+        String expectedResult = "White wins. - with pair: Two";
+        assertEquals(expectedResult, result);
+    }
+
+    @Test
     public void expect_player_two_win_when_both_player_have_two_pair_evaluate_remain_card() {
         String gameInput = "Black: 2C 2C 4C 4C 6S  White: 2S 2S 4S 4S AC";
         String result = new GameRunner().run(gameInput);

@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f01beff-0d56-4156-ba30-9d1da412fe18" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/playground/PlayerParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/playground/PlayerParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/my/playground/Hand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/playground/Hand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/my/playground/Rank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/playground/Rank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/my/playground/rules/FourOfKindRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/playground/rules/FourOfKindRule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/my/playground/rules/PairRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/playground/rules/PairRule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/my/playground/rules/ThreeOfKindRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/playground/rules/ThreeOfKindRule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/my/playground/rules/TwoPairRules.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/playground/rules/TwoPairRules.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/my/playground/GameRunnerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/my/playground/GameRunnerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,7 +69,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GameRunnerTest.expect_player_two_win_four_of_kind_by_value" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GameRunnerTest.expect_player_two_win_when_both_player_have_one_pair_evaluate_remain_card" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="poker.kata" />
       <extension name="coverage">
         <pattern>
@@ -74,7 +79,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="my.playground" />
       <option name="MAIN_CLASS_NAME" value="my.playground.GameRunnerTest" />
-      <option name="METHOD_NAME" value="expect_player_two_win_four_of_kind_by_value" />
+      <option name="METHOD_NAME" value="expect_player_two_win_when_both_player_have_one_pair_evaluate_remain_card" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -96,7 +101,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GameRunnerTest.multi_line_from_sample" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GameRunnerTest.expect_tie_with_pair_of_seven_each" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="poker.kata" />
       <extension name="coverage">
         <pattern>
@@ -106,7 +111,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="my.playground" />
       <option name="MAIN_CLASS_NAME" value="my.playground.GameRunnerTest" />
-      <option name="METHOD_NAME" value="multi_line_from_sample" />
+      <option name="METHOD_NAME" value="expect_tie_with_pair_of_seven_each" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -129,10 +134,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.my.playground in poker.kata" />
+        <item itemvalue="JUnit.GameRunnerTest.expect_tie_with_pair_of_seven_each" />
+        <item itemvalue="JUnit.GameRunnerTest.expect_player_two_win_when_both_player_have_one_pair_evaluate_remain_card" />
         <item itemvalue="JUnit.GameRunnerTest.expect_player_two_win_when_both_player_have_two_pair_evaluate_remain_card" />
         <item itemvalue="JUnit.All in poker.kata" />
-        <item itemvalue="JUnit.GameRunnerTest.multi_line_from_sample" />
-        <item itemvalue="JUnit.GameRunnerTest.expect_player_two_win_four_of_kind_by_value" />
       </list>
     </recent_temporary>
   </component>
@@ -178,50 +183,54 @@
       <screen x="0" y="0" width="1920" height="1038" />
     </state>
     <state x="718" y="263" key="#xdebugger.evaluate/0.0.1920.1038@0.0.1920.1038" timestamp="1604006534375" />
-    <state width="535" height="419" key="DebuggerActiveHint" timestamp="1604071954956">
+    <state width="535" height="419" key="DebuggerActiveHint" timestamp="1604090391038">
       <screen x="0" y="0" width="1600" height="858" />
     </state>
-    <state width="535" height="419" key="DebuggerActiveHint/0.0.1600.858@0.0.1600.858" timestamp="1604071954956" />
+    <state width="535" height="419" key="DebuggerActiveHint/0.0.1600.858@0.0.1600.858" timestamp="1604090391038" />
     <state width="490" height="506" key="DebuggerActiveHint/0.0.1920.1038@0.0.1920.1038" timestamp="1604050039002" />
-    <state width="1554" height="247" key="GridCell.Tab.0.bottom" timestamp="1604086884753">
+    <state x="100" y="100" width="1400" height="658" key="DiffContextDialog" timestamp="1604092522218">
       <screen x="0" y="0" width="1600" height="858" />
     </state>
-    <state width="1554" height="247" key="GridCell.Tab.0.bottom/0.0.1600.858@0.0.1600.858" timestamp="1604086884753" />
+    <state x="100" y="100" width="1400" height="658" key="DiffContextDialog/0.0.1600.858@0.0.1600.858" timestamp="1604092522218" />
+    <state width="1554" height="227" key="GridCell.Tab.0.bottom" timestamp="1604092529377">
+      <screen x="0" y="0" width="1600" height="858" />
+    </state>
+    <state width="1554" height="227" key="GridCell.Tab.0.bottom/0.0.1600.858@0.0.1600.858" timestamp="1604092529377" />
     <state width="1874" height="273" key="GridCell.Tab.0.bottom/0.0.1920.1038@0.0.1920.1038" timestamp="1604050924404" />
-    <state width="1554" height="247" key="GridCell.Tab.0.center" timestamp="1604086884752">
+    <state width="1554" height="227" key="GridCell.Tab.0.center" timestamp="1604092529376">
       <screen x="0" y="0" width="1600" height="858" />
     </state>
-    <state width="1554" height="247" key="GridCell.Tab.0.center/0.0.1600.858@0.0.1600.858" timestamp="1604086884752" />
+    <state width="1554" height="227" key="GridCell.Tab.0.center/0.0.1600.858@0.0.1600.858" timestamp="1604092529376" />
     <state width="1874" height="273" key="GridCell.Tab.0.center/0.0.1920.1038@0.0.1920.1038" timestamp="1604050924404" />
-    <state width="1554" height="247" key="GridCell.Tab.0.left" timestamp="1604086884752">
+    <state width="1554" height="227" key="GridCell.Tab.0.left" timestamp="1604092529376">
       <screen x="0" y="0" width="1600" height="858" />
     </state>
-    <state width="1554" height="247" key="GridCell.Tab.0.left/0.0.1600.858@0.0.1600.858" timestamp="1604086884752" />
+    <state width="1554" height="227" key="GridCell.Tab.0.left/0.0.1600.858@0.0.1600.858" timestamp="1604092529376" />
     <state width="1874" height="273" key="GridCell.Tab.0.left/0.0.1920.1038@0.0.1920.1038" timestamp="1604050924404" />
-    <state width="1554" height="247" key="GridCell.Tab.0.right" timestamp="1604086884753">
+    <state width="1554" height="227" key="GridCell.Tab.0.right" timestamp="1604092529376">
       <screen x="0" y="0" width="1600" height="858" />
     </state>
-    <state width="1554" height="247" key="GridCell.Tab.0.right/0.0.1600.858@0.0.1600.858" timestamp="1604086884753" />
+    <state width="1554" height="227" key="GridCell.Tab.0.right/0.0.1600.858@0.0.1600.858" timestamp="1604092529376" />
     <state width="1874" height="273" key="GridCell.Tab.0.right/0.0.1920.1038@0.0.1920.1038" timestamp="1604050924404" />
-    <state width="1554" height="266" key="GridCell.Tab.1.bottom" timestamp="1604081516039">
+    <state width="1554" height="218" key="GridCell.Tab.1.bottom" timestamp="1604090690356">
       <screen x="0" y="0" width="1600" height="858" />
     </state>
-    <state width="1554" height="266" key="GridCell.Tab.1.bottom/0.0.1600.858@0.0.1600.858" timestamp="1604081516039" />
+    <state width="1554" height="218" key="GridCell.Tab.1.bottom/0.0.1600.858@0.0.1600.858" timestamp="1604090690356" />
     <state width="1874" height="338" key="GridCell.Tab.1.bottom/0.0.1920.1038@0.0.1920.1038" timestamp="1604050051717" />
-    <state width="1554" height="266" key="GridCell.Tab.1.center" timestamp="1604081516039">
+    <state width="1554" height="218" key="GridCell.Tab.1.center" timestamp="1604090690356">
       <screen x="0" y="0" width="1600" height="858" />
     </state>
-    <state width="1554" height="266" key="GridCell.Tab.1.center/0.0.1600.858@0.0.1600.858" timestamp="1604081516039" />
+    <state width="1554" height="218" key="GridCell.Tab.1.center/0.0.1600.858@0.0.1600.858" timestamp="1604090690356" />
     <state width="1874" height="338" key="GridCell.Tab.1.center/0.0.1920.1038@0.0.1920.1038" timestamp="1604050051717" />
-    <state width="1554" height="266" key="GridCell.Tab.1.left" timestamp="1604081516038">
+    <state width="1554" height="218" key="GridCell.Tab.1.left" timestamp="1604090690355">
       <screen x="0" y="0" width="1600" height="858" />
     </state>
-    <state width="1554" height="266" key="GridCell.Tab.1.left/0.0.1600.858@0.0.1600.858" timestamp="1604081516038" />
+    <state width="1554" height="218" key="GridCell.Tab.1.left/0.0.1600.858@0.0.1600.858" timestamp="1604090690355" />
     <state width="1874" height="338" key="GridCell.Tab.1.left/0.0.1920.1038@0.0.1920.1038" timestamp="1604050051717" />
-    <state width="1554" height="266" key="GridCell.Tab.1.right" timestamp="1604081516039">
+    <state width="1554" height="218" key="GridCell.Tab.1.right" timestamp="1604090690356">
       <screen x="0" y="0" width="1600" height="858" />
     </state>
-    <state width="1554" height="266" key="GridCell.Tab.1.right/0.0.1600.858@0.0.1600.858" timestamp="1604081516039" />
+    <state width="1554" height="218" key="GridCell.Tab.1.right/0.0.1600.858@0.0.1600.858" timestamp="1604090690356" />
     <state width="1874" height="338" key="GridCell.Tab.1.right/0.0.1920.1038@0.0.1920.1038" timestamp="1604050051717" />
     <state x="592" y="112" width="406" height="631" key="RollbackChangesDialog" timestamp="1604086796671">
       <screen x="0" y="0" width="1600" height="858" />
@@ -248,13 +257,22 @@
       <screen x="0" y="0" width="1920" height="1038" />
     </state>
     <state x="624" y="237" key="run.anything.popup/0.0.1920.1038@0.0.1920.1038" timestamp="1604048714888" />
-    <state x="519" y="188" width="672" height="561" key="search.everywhere.popup" timestamp="1604081383948">
+    <state x="519" y="188" width="672" height="561" key="search.everywhere.popup" timestamp="1604091301102">
       <screen x="0" y="0" width="1600" height="858" />
     </state>
-    <state x="519" y="188" width="672" height="561" key="search.everywhere.popup/0.0.1600.858@0.0.1600.858" timestamp="1604081383948" />
+    <state x="519" y="188" width="672" height="561" key="search.everywhere.popup/0.0.1600.858@0.0.1600.858" timestamp="1604091301102" />
     <state x="623" y="228" width="672" height="678" key="search.everywhere.popup/0.0.1920.1038@0.0.1920.1038" timestamp="1604010116760" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/my/playground/rules/PairRule.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
         <watch expression="highestCard.map(Rank::highCard).orElse(null)" />

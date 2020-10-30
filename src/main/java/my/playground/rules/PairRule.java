@@ -4,11 +4,8 @@ import my.playground.Card;
 import my.playground.Hand;
 import my.playground.Rank;
 
-import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
-import java.util.stream.Collectors;
 
 /**
  * Pair: 2 of the 5 cards in the hand have the same value.
@@ -19,12 +16,13 @@ public class PairRule implements GameRule {
 
     @Override
     public Rank evaluate(Hand hand) {
-        Map<Card.CardValue,List<Card>> cardGroupByValue = hand.cardGroupByValue();
+        List<Card> pair = hand.cardsEqualValueTwoByTwo();
+        if(pair.size() == 2) {
+            List<Card> kickers = hand.allCardsExcept(pair);
+            Card highestKicker = kickers.stream().max(Card::compareTo).get();
+            return Rank.pair(pair.get(0), pair.get(1), highestKicker);
+        }
 
-        return cardGroupByValue.values().stream()
-                .filter(cards -> cards.size() == 2)
-                .findFirst()
-                .map(cards -> Rank.pair(cards.get(0), cards.get(1)) )
-                .orElse(null);
+        return null;
     }
 }

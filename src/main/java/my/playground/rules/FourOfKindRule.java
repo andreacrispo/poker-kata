@@ -14,11 +14,10 @@ public class FourOfKindRule implements GameRule {
 
     @Override
     public Rank evaluate(Hand hand) {
-        Map<Card.CardValue, List<Card>> cardGroupByValue = hand.cardGroupByValue();
-        return cardGroupByValue.values().stream()
-                .filter(cards -> cards.size() == 4)
-                .findFirst()
-                .map(cards -> Rank.fourOfKind(cards.get(3)))
-                .orElse(null);
+        List<Card> cardsFourByFour = hand.cardsEqualValueFourByFour();
+        if(cardsFourByFour.size() == 4)
+            return Rank.fourOfKind(cardsFourByFour.get(3));
+
+        return null;
     }
 }

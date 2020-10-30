@@ -16,8 +16,8 @@ public class Rank implements Comparable<Rank> {
         return new HighCard(card);
     }
 
-    public static Rank pair(Card cardOne, Card cardTwo) {
-        return new Pair(cardOne, cardTwo);
+    public static Rank pair(Card cardOne, Card cardTwo, Card highestKicker) {
+        return new Pair(cardOne, cardTwo, highestKicker);
     }
 
     public static Rank threeOfKind(Card card) {
@@ -32,8 +32,8 @@ public class Rank implements Comparable<Rank> {
         return new Flush(card);
     }
 
-    public static Rank twoPair(Card cardOne, Card cardTwo) {
-        return new TwoPair(cardOne, cardTwo);
+    public static Rank twoPair(Card cardOne, Card cardTwo, Card highestKicker) {
+        return new TwoPair(cardOne, cardTwo, highestKicker);
     }
 
     public static Rank fourOfKind(Card card) {
@@ -104,10 +104,9 @@ public class Rank implements Comparable<Rank> {
     public static class Pair extends Rank {
         Card cardOne;
         Card cardTwo;
-        public Pair(Card cardOne, Card CardTwo) {
-            super(RankValue.Pair.numericValue, cardOne.getValue());
+        public Pair(Card cardOne, Card CardTwo,Card highestKicker) {
+            super(RankValue.Pair.numericValue, highestKicker.getValue());
             this.cardOne = cardOne;
-            this.cardTwo = cardTwo;
         }
 
         @Override
@@ -119,8 +118,8 @@ public class Rank implements Comparable<Rank> {
     private static class TwoPair extends Rank {
         Card cardOne;
         Card cardTwo;
-        public TwoPair(Card cardOne, Card cardTwo) {
-            super(RankValue.TwoPair.numericValue, cardTwo.getValue());
+        public TwoPair(Card cardOne, Card cardTwo, Card highestKicker) {
+            super(RankValue.TwoPair.numericValue, highestKicker.getValue());
             this.cardOne = cardOne;
             this.cardTwo = cardTwo;
         }
