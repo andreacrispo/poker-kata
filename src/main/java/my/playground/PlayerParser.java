@@ -1,6 +1,8 @@
 package my.playground;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class PlayerParser {
 
@@ -16,11 +18,8 @@ public class PlayerParser {
     }
 
     private static List<Card> getCardList(String cardsString) {
-        List<Card> cards = new ArrayList<>();
-        String[] cardSplit = cardsString.split(CARD_SEPARATOR);
-        for (String cardString : cardSplit) {
-            cards.add(CardFactory.fromString(cardString));
-        }
-        return cards;
+        return Arrays.stream(cardsString.split(CARD_SEPARATOR))
+                .map(CardFactory::fromString)
+                .collect(Collectors.toList());
     }
 }

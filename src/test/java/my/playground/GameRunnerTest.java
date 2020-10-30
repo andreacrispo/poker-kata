@@ -1,5 +1,6 @@
 package my.playground;
 
+import org.junit.Ignore;
 import org.junit.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -158,6 +159,16 @@ public class GameRunnerTest {
         String gameInput = "Black: 2C 5C 3C 4C 6C  White: 2S 8S AS QS 3S 3S";
         String result = new GameRunner().run(gameInput);
         String expectedResult = "Black wins. - with straight flush";
+        assertEquals(expectedResult, result);
+    }
+
+
+    @Test
+    @Ignore
+    public void expect_player_two_win_when_both_player_have_two_pair_evaluate_remain_card() {
+        String gameInput = "Black: 2C 2C 4C 4C 6S  White: 2S 2S 4S 4S AC";
+        String result = new GameRunner().run(gameInput);
+        String expectedResult = "White wins. - with two pair: Two Four";
         assertEquals(expectedResult, result);
     }
 }
