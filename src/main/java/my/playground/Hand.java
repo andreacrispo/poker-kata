@@ -7,8 +7,8 @@ import static java.util.stream.Collectors.groupingBy;
 public class Hand {
 
     private List<Card> cards;
-
     private Map<Card.CardValue,List<Card>> _cardGroupByValue;
+    private Card _highestCard;
 
     public Hand(List<Card> cards) {
         this.cards = this.sortedList(cards);
@@ -23,9 +23,12 @@ public class Hand {
     }
 
     public Card getHighestCard() {
-        return this.cards.stream()
-                    .max(Card::compareTo)
-                    .get();
+        if(_highestCard == null){
+            _highestCard = this.cards.stream()
+                                    .max(Card::compareTo)
+                                    .get();
+        }
+        return _highestCard;
     }
 
     public Map<Card.CardValue,List<Card>> cardGroupByValue() {
