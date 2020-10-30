@@ -4,7 +4,7 @@ import java.util.Map;
 
 public class CardFactory {
 
-    private static final Map<Character, Card.CardValue> cardValueMapper  = new HashMap<Character, Card.CardValue>() {{
+    private static final Map<Character, Card.CardValue> cardValueMapper  = new HashMap<>() {{
         put('2', Card.CardValue.Two);
         put('3', Card.CardValue.Three);
         put('4', Card.CardValue.Four);
@@ -20,7 +20,7 @@ public class CardFactory {
         put('A', Card.CardValue.Ace);
     }};
 
-    private static final Map<Character, Card.Suit> suitMapper = new HashMap<Character, Card.Suit>() {{
+    private static final Map<Character, Card.Suit> suitMapper = new HashMap<>() {{
         put('C', Card.Suit.Clubs);
         put('H', Card.Suit.Hearts);
         put('D', Card.Suit.Diamonds);

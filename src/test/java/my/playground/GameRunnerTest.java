@@ -6,13 +6,13 @@ import static org.junit.jupiter.api.Assertions.*;
 public class GameRunnerTest {
 
     @Test
-    public void expect_player_one_win_with_high_card_seven() {
-        String gameInput = "Black: 7H 3D 4H  White: 2C 3H 5D";
+    public void expect_player_one_win_with_high_card_nine() {
+        String gameInput = "Black: 9H 3D 4H 2D 5H  White: 2C 3H 5D 4H 8H";
         GameRunner gameRunner = new GameRunner();
 
         String result = gameRunner.run(gameInput);
 
-        String expectedResult = "Black wins. - with high card: Seven";
+        String expectedResult = "Black wins. - with high card: Nine";
         assertEquals(expectedResult, result);
     }
 
@@ -128,7 +128,7 @@ public class GameRunnerTest {
 
     @Test
     public void expect_player_two_win_four_of_kind_by_value() {
-        String gameInput = "Black: 4H 4D 4S 4C  White: 9D 9S 9C 9H";
+        String gameInput = "Black: 4H 4D 4S 4C 5S  White: 9D 9S 9C 9H 5S";
         GameRunner gameRunner = new GameRunner();
 
         String result = gameRunner.run(gameInput);

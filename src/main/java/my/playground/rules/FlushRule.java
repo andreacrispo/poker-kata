@@ -5,7 +5,8 @@ import my.playground.Hand;
 import my.playground.Rank;
 
 import java.util.List;
-import java.util.stream.Collectors;
+
+import static java.util.stream.Collectors.groupingBy;
 
 /**
  * Hand contains 5 cards of the same suit.
@@ -13,20 +14,18 @@ import java.util.stream.Collectors;
  */
 public class FlushRule implements GameRule {
 
-
     @Override
     public Rank evaluate(Hand hand) {
-        List<Card.Suit> suitList = hand.getCards().stream().map(Card::getSuit).collect(Collectors.toList());
+        List<Card> cards = hand.getCards();
 
-        for(int i=0; i < suitList.size(); i++){
-            if(i+1 < suitList.size()) {
-                Card.Suit current = suitList.get(i);
-                Card.Suit  next = suitList.get(i+1);
-                if (!current.equals(next)) {
-                    return null;
-                }
-            }
-        }
-        return Rank.flush(hand.getHighestCard());
+        boolean isAllCardsSameSuit = cards.stream()
+                .collect(groupingBy(Card::getSuit))
+                .values().stream()
+                .anyMatch(s -> s.size() == cards.size());
+
+        if(isAllCardsSameSuit)
+            return Rank.flush(hand.getHighestCard());
+
+        return null;
     }
 }

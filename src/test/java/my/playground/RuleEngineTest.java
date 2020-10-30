@@ -15,7 +15,9 @@ public class RuleEngineTest {
         Hand hand = new Hand(asList(
                 twoOf(Diamonds),
                 fourOf(Hearts),
-                sevenOf(Clubs)
+                sevenOf(Clubs),
+                fiveOf(Clubs),
+                sixOf(Diamonds)
         ));
         RuleEngine ruleEngine = new RuleEngine();
 
@@ -33,7 +35,9 @@ public class RuleEngineTest {
         Hand hand = new Hand(asList(
                 twoOf(Spades),
                 threeOf(Spades),
-                twoOf(Clubs)
+                twoOf(Clubs),
+                kingOf(Diamonds),
+                aceOf(Hearts)
         ));
 
         RuleEngine ruleEngine = new RuleEngine();
@@ -69,7 +73,9 @@ public class RuleEngineTest {
         Hand hand = new Hand(asList(
                 fiveOf(Spades),
                 fiveOf(Hearts),
-                fiveOf(Clubs)
+                fiveOf(Clubs),
+                twoOf(Clubs),
+                aceOf(Hearts)
         ));
 
         RuleEngine ruleEngine = new RuleEngine();
@@ -83,7 +89,9 @@ public class RuleEngineTest {
         Hand hand = new Hand(asList(
                 threeOf(Spades),
                 fiveOf(Hearts),
-                fourOf(Clubs)
+                fourOf(Clubs),
+                sixOf(Clubs),
+                sevenOf(Spades)
         ));
 
         RuleEngine ruleEngine = new RuleEngine();
@@ -96,6 +104,8 @@ public class RuleEngineTest {
     public void test_hand_with_flush() {
         Hand hand = new Hand(asList(
                 threeOf(Spades),
+                fiveOf(Spades),
+                sevenOf(Spades),
                 fiveOf(Spades),
                 sevenOf(Spades)
         ));
@@ -111,7 +121,8 @@ public class RuleEngineTest {
                 threeOf(Spades),
                 threeOf(Clubs),
                 threeOf(Diamonds),
-                threeOf(Hearts)
+                threeOf(Hearts),
+                twoOf(Diamonds)
         ));
 
         RuleEngine ruleEngine = new RuleEngine();

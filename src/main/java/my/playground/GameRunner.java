@@ -17,7 +17,7 @@ public class GameRunner {
         String gameResult = "";
         if(playerOneRank.isHigherThen(playerTwoRank)) {
             gameResult = playerOne.getName() + " wins. - with " + playerOneRank.toString();
-        }else if(playerTwoRank.isHigherThen(playerOneRank)) {
+        } else if(playerTwoRank.isHigherThen(playerOneRank)) {
             gameResult = playerTwo.getName() + " wins. - with " + playerTwoRank.toString();
         }else {
             gameResult =  "Tie. - with " + playerOneRank.toString();

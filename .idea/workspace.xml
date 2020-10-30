@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f01beff-0d56-4156-ba30-9d1da412fe18" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/playground/Hand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/playground/Hand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/my/playground/CardFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/playground/CardFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/my/playground/GameRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/playground/GameRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/my/playground/rules/FlushRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/playground/rules/FlushRule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/my/playground/GameRunnerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/my/playground/GameRunnerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/my/playground/RankTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/my/playground/RuleEngineTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/my/playground/RuleEngineTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,42 +59,18 @@
       <recent name="my.playground" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in poker.kata">
-    <configuration name="All in poker.kata" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="poker.kata" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GameRunnerTest.expect_player_one_win_four_of_kind" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.GameRunnerTest.expect_player_two_win_four_of_kind_by_value">
+    <configuration name="GameRunnerTest.expect_player_one_win_with_high_card_seven" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="poker.kata" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="my.playground.rules.*" />
+          <option name="PATTERN" value="my.playground.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="my.playground" />
       <option name="MAIN_CLASS_NAME" value="my.playground.GameRunnerTest" />
-      <option name="METHOD_NAME" value="expect_player_one_win_four_of_kind" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GameRunnerTest.expect_player_one_win_with_full_house_from_sample" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="poker.kata" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="my.playground.rules.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="my.playground" />
-      <option name="MAIN_CLASS_NAME" value="my.playground.GameRunnerTest" />
-      <option name="METHOD_NAME" value="expect_player_one_win_with_full_house_from_sample" />
+      <option name="METHOD_NAME" value="expect_player_one_win_with_high_card_seven" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -99,13 +80,44 @@
       <module name="poker.kata" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="my.playground.rules.*" />
+          <option name="PATTERN" value="my.playground.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="my.playground" />
       <option name="MAIN_CLASS_NAME" value="my.playground.GameRunnerTest" />
       <option name="METHOD_NAME" value="expect_player_two_win_four_of_kind_by_value" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RuleEngineTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="poker.kata" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="my.playground.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="my.playground" />
+      <option name="MAIN_CLASS_NAME" value="my.playground.RuleEngineTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RuleEngineTest.test_hand_with_flush" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="poker.kata" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="my.playground.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="my.playground" />
+      <option name="MAIN_CLASS_NAME" value="my.playground.RuleEngineTest" />
+      <option name="METHOD_NAME" value="test_hand_with_flush" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -127,11 +139,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in poker.kata" />
-        <item itemvalue="JUnit.GameRunnerTest.expect_player_one_win_with_full_house_from_sample" />
-        <item itemvalue="JUnit.my.playground in poker.kata" />
         <item itemvalue="JUnit.GameRunnerTest.expect_player_two_win_four_of_kind_by_value" />
-        <item itemvalue="JUnit.GameRunnerTest.expect_player_one_win_four_of_kind" />
+        <item itemvalue="JUnit.my.playground in poker.kata" />
+        <item itemvalue="JUnit.RuleEngineTest.test_hand_with_flush" />
+        <item itemvalue="JUnit.GameRunnerTest.expect_player_one_win_with_high_card_seven" />
+        <item itemvalue="JUnit.RuleEngineTest" />
       </list>
     </recent_temporary>
   </component>
@@ -177,45 +189,45 @@
     </state>
     <state width="535" height="419" key="DebuggerActiveHint/0.0.1600.858@0.0.1600.858" timestamp="1604071954956" />
     <state width="490" height="506" key="DebuggerActiveHint/0.0.1920.1038@0.0.1920.1038" timestamp="1604050039002" />
-    <state width="1554" height="256" key="GridCell.Tab.0.bottom" timestamp="1604074774884">
+    <state width="1554" height="247" key="GridCell.Tab.0.bottom" timestamp="1604076346468">
       <screen x="0" y="0" width="1600" height="858" />
     </state>
-    <state width="1554" height="256" key="GridCell.Tab.0.bottom/0.0.1600.858@0.0.1600.858" timestamp="1604074774884" />
+    <state width="1554" height="247" key="GridCell.Tab.0.bottom/0.0.1600.858@0.0.1600.858" timestamp="1604076346468" />
     <state width="1874" height="273" key="GridCell.Tab.0.bottom/0.0.1920.1038@0.0.1920.1038" timestamp="1604050924404" />
-    <state width="1554" height="256" key="GridCell.Tab.0.center" timestamp="1604074774883">
+    <state width="1554" height="247" key="GridCell.Tab.0.center" timestamp="1604076346467">
       <screen x="0" y="0" width="1600" height="858" />
     </state>
-    <state width="1554" height="256" key="GridCell.Tab.0.center/0.0.1600.858@0.0.1600.858" timestamp="1604074774883" />
+    <state width="1554" height="247" key="GridCell.Tab.0.center/0.0.1600.858@0.0.1600.858" timestamp="1604076346467" />
     <state width="1874" height="273" key="GridCell.Tab.0.center/0.0.1920.1038@0.0.1920.1038" timestamp="1604050924404" />
-    <state width="1554" height="256" key="GridCell.Tab.0.left" timestamp="1604074774883">
+    <state width="1554" height="247" key="GridCell.Tab.0.left" timestamp="1604076346467">
       <screen x="0" y="0" width="1600" height="858" />
     </state>
-    <state width="1554" height="256" key="GridCell.Tab.0.left/0.0.1600.858@0.0.1600.858" timestamp="1604074774883" />
+    <state width="1554" height="247" key="GridCell.Tab.0.left/0.0.1600.858@0.0.1600.858" timestamp="1604076346467" />
     <state width="1874" height="273" key="GridCell.Tab.0.left/0.0.1920.1038@0.0.1920.1038" timestamp="1604050924404" />
-    <state width="1554" height="256" key="GridCell.Tab.0.right" timestamp="1604074774883">
+    <state width="1554" height="247" key="GridCell.Tab.0.right" timestamp="1604076346468">
       <screen x="0" y="0" width="1600" height="858" />
     </state>
-    <state width="1554" height="256" key="GridCell.Tab.0.right/0.0.1600.858@0.0.1600.858" timestamp="1604074774883" />
+    <state width="1554" height="247" key="GridCell.Tab.0.right/0.0.1600.858@0.0.1600.858" timestamp="1604076346468" />
     <state width="1874" height="273" key="GridCell.Tab.0.right/0.0.1920.1038@0.0.1920.1038" timestamp="1604050924404" />
-    <state width="1554" height="266" key="GridCell.Tab.1.bottom" timestamp="1604071981098">
+    <state width="1554" height="266" key="GridCell.Tab.1.bottom" timestamp="1604076327369">
       <screen x="0" y="0" width="1600" height="858" />
     </state>
-    <state width="1554" height="266" key="GridCell.Tab.1.bottom/0.0.1600.858@0.0.1600.858" timestamp="1604071981098" />
+    <state width="1554" height="266" key="GridCell.Tab.1.bottom/0.0.1600.858@0.0.1600.858" timestamp="1604076327369" />
     <state width="1874" height="338" key="GridCell.Tab.1.bottom/0.0.1920.1038@0.0.1920.1038" timestamp="1604050051717" />
-    <state width="1554" height="266" key="GridCell.Tab.1.center" timestamp="1604071981096">
+    <state width="1554" height="266" key="GridCell.Tab.1.center" timestamp="1604076327368">
       <screen x="0" y="0" width="1600" height="858" />
     </state>
-    <state width="1554" height="266" key="GridCell.Tab.1.center/0.0.1600.858@0.0.1600.858" timestamp="1604071981096" />
+    <state width="1554" height="266" key="GridCell.Tab.1.center/0.0.1600.858@0.0.1600.858" timestamp="1604076327368" />
     <state width="1874" height="338" key="GridCell.Tab.1.center/0.0.1920.1038@0.0.1920.1038" timestamp="1604050051717" />
-    <state width="1554" height="266" key="GridCell.Tab.1.left" timestamp="1604071981096">
+    <state width="1554" height="266" key="GridCell.Tab.1.left" timestamp="1604076327367">
       <screen x="0" y="0" width="1600" height="858" />
     </state>
-    <state width="1554" height="266" key="GridCell.Tab.1.left/0.0.1600.858@0.0.1600.858" timestamp="1604071981096" />
+    <state width="1554" height="266" key="GridCell.Tab.1.left/0.0.1600.858@0.0.1600.858" timestamp="1604076327367" />
     <state width="1874" height="338" key="GridCell.Tab.1.left/0.0.1920.1038@0.0.1920.1038" timestamp="1604050051717" />
-    <state width="1554" height="266" key="GridCell.Tab.1.right" timestamp="1604071981097">
+    <state width="1554" height="266" key="GridCell.Tab.1.right" timestamp="1604076327368">
       <screen x="0" y="0" width="1600" height="858" />
     </state>
-    <state width="1554" height="266" key="GridCell.Tab.1.right/0.0.1600.858@0.0.1600.858" timestamp="1604071981097" />
+    <state width="1554" height="266" key="GridCell.Tab.1.right/0.0.1600.858@0.0.1600.858" timestamp="1604076327368" />
     <state width="1874" height="338" key="GridCell.Tab.1.right/0.0.1920.1038@0.0.1920.1038" timestamp="1604050051717" />
     <state x="100" y="100" width="1720" height="838" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1604004587263">
       <screen x="0" y="0" width="1920" height="1038" />
