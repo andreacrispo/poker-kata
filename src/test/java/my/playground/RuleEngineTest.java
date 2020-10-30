@@ -1,6 +1,5 @@
 package my.playground;
 
-import my.playground.Card.Suit;
 import org.junit.Test;
 
 import static java.util.Arrays.asList;
@@ -43,6 +42,25 @@ public class RuleEngineTest {
 
         assertEquals(2, maxRank.getPriority());
         assertEquals(Rank.Pair.class, maxRank.getClass());
+    }
+
+
+    @Test
+    public void test_hand_with_two_pair_pair_of_four_pair_of_seven() {
+        Hand hand = new Hand(asList(
+                fourOf(Spades),
+                fiveOf(Clubs),
+                fourOf(Hearts),
+                fiveOf(Diamonds),
+                sevenOf(Diamonds)
+        ));
+
+        RuleEngine ruleEngine = new RuleEngine();
+
+        Rank maxRank = ruleEngine.evaluate(hand);
+
+        assertEquals(3, maxRank.getPriority());
+        assertEquals("two pair: Four Five", maxRank.toString());
     }
 
 

@@ -6,6 +6,7 @@ import my.playground.Rank;
 
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
 
@@ -18,14 +19,12 @@ public class PairRule implements GameRule {
 
     @Override
     public Rank evaluate(Hand hand) {
-        List<Card> cards = hand.getCards();
+        Map<Card.CardValue,List<Card>> cardGroupByValue = hand.cardGroupByValue();
 
-        Set<Integer> uniqueValues = new HashSet<>();
-        for (Card card: cards) {
-            if(!uniqueValues.add(card.getValue().numericValue)) {
-                return Rank.pair(card, card);
-            }
-        }
-        return null;
+        return cardGroupByValue.values().stream()
+                .filter(cards -> cards.size() == 2)
+                .findFirst()
+                .map(cards -> Rank.pair(cards.get(0), cards.get(1)) )
+                .orElse(null);
     }
 }

@@ -43,6 +43,15 @@ public class Card implements Comparable<Card> {
         return Objects.hash(value, suit);
     }
 
+
+    @Override
+    public String toString() {
+        return "Card{" +
+                "value=" + value +
+                ", suit=" + suit +
+                '}';
+    }
+
     public enum Suit {
         Clubs,
         Diamonds,

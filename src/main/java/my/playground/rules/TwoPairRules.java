@@ -4,7 +4,6 @@ import my.playground.Card;
 import my.playground.Hand;
 import my.playground.Rank;
 
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -17,25 +16,17 @@ public class TwoPairRules implements GameRule {
 
     @Override
     public Rank evaluate(Hand hand) {
-        List<Card> cards = hand.getCards();
-        Map<Card.CardValue, Integer> occurrences = new HashMap<>();
+        Map<Card.CardValue,List<Card>> cardGroupByValue = hand.cardGroupByValue();
 
-        for(Card card : cards){
-            if(occurrences.containsKey(card.getValue())){
-                occurrences.put(card.getValue(), occurrences.get(card.getValue()) +1);
-            }else {
-                occurrences.put(card.getValue(), 1);
-            }
+        List<List<Card>> pair = cardGroupByValue.values().stream()
+                .filter(cards -> cards.size() == 2)
+                .collect(Collectors.toList());
+
+        if(pair.size() == 2){
+            return Rank.twoPair(pair.get(0).get(0), pair.get(1).get(0));
         }
 
-        for (Map.Entry<Card.CardValue, Integer> entry : occurrences.entrySet()) {
-            Integer occurrence = entry.getValue();
-            if (occurrence != 2) {
-                return null;
-            }
-        }
-
-        return Rank.twoPair(hand.getHighestCard());
-
+        return null;
     }
+
 }

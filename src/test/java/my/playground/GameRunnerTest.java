@@ -117,7 +117,7 @@ public class GameRunnerTest {
 
         String result = gameRunner.run(gameInput);
 
-        String expectedResult = "Black wins. - with two pair: Four";
+        String expectedResult = "Black wins. - with two pair: Two Four";
         assertEquals(expectedResult, result);
     }
 }

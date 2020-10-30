@@ -29,16 +29,13 @@ public class PlayerParserTest {
 
 
     @Test
-    public void expect_one_player_with_three_card_two_of_diamond_seven_of_heart_five_of_clubs() {
+    public void expect_one_player_with_three_card_two_of_diamond_seven_of_heart_five_of_clubs_sorted() {
         String playerString = "Mario: 2D 7H 5C";
         Player player = PlayerParser.fromString(playerString);
-        Card cardOne = twoOf(Diamonds);
-        Card cardTwo = sevenOf(Hearts);
-        Card cardThree = fiveOf(Clubs);
         assertEquals("Mario", player.getName());
-        assertEquals(cardOne, player.getHand().getCards().get(0));
-        assertEquals(cardTwo, player.getHand().getCards().get(1));
-        assertEquals(cardThree, player.getHand().getCards().get(2));
+        assertEquals(twoOf(Diamonds), player.getHand().getCards().get(0));
+        assertEquals(fiveOf(Clubs), player.getHand().getCards().get(1));
+        assertEquals(sevenOf(Hearts), player.getHand().getCards().get(2));
     }
 
     @Test
@@ -47,8 +44,8 @@ public class PlayerParserTest {
         Player player = PlayerParser.fromString(playerString);
         assertEquals("Frank", player.getName());
         assertEquals(twoOf(Diamonds), player.getHand().getCards().get(0));
-        assertEquals(sevenOf(Hearts), player.getHand().getCards().get(1));
-        assertEquals(fiveOf(Clubs), player.getHand().getCards().get(2));
+        assertEquals(fiveOf(Clubs), player.getHand().getCards().get(1));
+        assertEquals(sevenOf(Hearts), player.getHand().getCards().get(2));
         assertEquals(nineOf(Clubs), player.getHand().getCards().get(3));
     }
 }
