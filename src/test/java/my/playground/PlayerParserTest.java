@@ -48,4 +48,5 @@ public class PlayerParserTest {
         assertEquals(sevenOf(Hearts), player.getHand().getCards().get(2));
         assertEquals(nineOf(Clubs), player.getHand().getCards().get(3));
     }
+
 }

@@ -40,6 +40,10 @@ public class Rank implements Comparable<Rank> {
         return new FourOfKind(card);
     }
 
+    public static Rank fullHouse() {
+        return new FullHouse();
+    }
+
     public Integer getPriority() {
         return priority;
     }
@@ -174,6 +178,17 @@ public class Rank implements Comparable<Rank> {
         }
     }
 
+    private static class FullHouse extends Rank {
+        Card card;
+        public FullHouse() {
+            super(RankValue.FullHouse.numericValue, null);
+        }
+        @Override
+        public String toString() {
+            return "full house";
+        }
+    }
+
 
     public enum RankValue {
         HighCard(1),
@@ -182,7 +197,9 @@ public class Rank implements Comparable<Rank> {
         ThreeOfKind(4),
         Straight(5),
         Flush(6),
-        FourOfKind(7);
+        FullHouse(7),
+        FourOfKind(8),
+        StraightFlush(9);
 
         public final Integer numericValue;
         RankValue(int numValue){

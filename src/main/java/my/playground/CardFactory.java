@@ -58,4 +58,12 @@ public class CardFactory {
     public static Card nineOf(Card.Suit suit) {
         return new Card(Card.CardValue.Nine, suit);
     }
+
+    public static Card kingOf(Card.Suit suit) {
+        return new Card(Card.CardValue.King, suit);
+    }
+
+    public static Card aceOf(Card.Suit suit) {
+        return new Card(Card.CardValue.Ace, suit);
+    }
 }

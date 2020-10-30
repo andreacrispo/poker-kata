@@ -116,7 +116,26 @@ public class RuleEngineTest {
 
         RuleEngine ruleEngine = new RuleEngine();
         Rank maxRank = ruleEngine.evaluate(hand);
-        assertEquals(7, maxRank.getPriority());
+        assertEquals(8, maxRank.getPriority());
         assertEquals("four of kind: Three", maxRank.toString());
     }
+
+    @Test
+    public void test_hand_with_full_house() {
+        Hand hand = new Hand(asList(
+                threeOf(Spades),
+                threeOf(Clubs),
+                threeOf(Diamonds),
+                kingOf(Clubs),
+                kingOf(Spades)
+        ));
+
+        RuleEngine ruleEngine = new RuleEngine();
+        Rank maxRank = ruleEngine.evaluate(hand);
+        assertEquals(7, maxRank.getPriority());
+        assertEquals("full house", maxRank.toString());
+    }
+
+
+
 }

@@ -12,6 +12,7 @@ public class RuleEngine {
 
     List<GameRule> gameRules = asList(
             new FourOfKindRule(),
+            new FullHouseRule(),
             new FlushRule(),
             new StraightRule(),
             new ThreeOfKindRule(),

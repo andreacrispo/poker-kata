@@ -7,6 +7,9 @@ import my.playground.Rank;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * 4 cards with the same value. Ranked by the value of the 4 cards.
+ */
 public class FourOfKindRule implements GameRule {
 
     @Override

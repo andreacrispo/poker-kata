@@ -136,4 +136,20 @@ public class GameRunnerTest {
         assertEquals(expectedResult, result);
     }
 
+
+    @Test
+    public void expect_player_two_win_full_house() {
+        String gameInput = "Black: 4H 4D 4S AC AD  White: 9D 9S 2C 9H AD";
+        String result = new GameRunner().run(gameInput);
+        String expectedResult = "Black wins. - with full house";
+        assertEquals(expectedResult, result);
+    }
+
+    @Test
+    public void expect_player_one_win_with_full_house_from_sample() {
+        String gameInput = "Black: 2H 4S 4C 2D 4H  White: 2S 8S AS QS 3S";
+        String result = new GameRunner().run(gameInput);
+        String expectedResult = "Black wins. - with full house";
+        assertEquals(expectedResult, result);
+    }
 }
