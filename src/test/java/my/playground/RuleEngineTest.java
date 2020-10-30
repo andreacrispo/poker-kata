@@ -73,9 +73,7 @@ public class RuleEngineTest {
         ));
 
         RuleEngine ruleEngine = new RuleEngine();
-
         Rank maxRank = ruleEngine.evaluate(hand);
-
         assertEquals(4, maxRank.getPriority());
     }
 
@@ -105,5 +103,20 @@ public class RuleEngineTest {
         RuleEngine ruleEngine = new RuleEngine();
         Rank maxRank = ruleEngine.evaluate(hand);
         assertEquals(6, maxRank.getPriority());
+    }
+
+    @Test
+    public void test_hand_with_four_ok_kind() {
+        Hand hand = new Hand(asList(
+                threeOf(Spades),
+                threeOf(Clubs),
+                threeOf(Diamonds),
+                threeOf(Hearts)
+        ));
+
+        RuleEngine ruleEngine = new RuleEngine();
+        Rank maxRank = ruleEngine.evaluate(hand);
+        assertEquals(7, maxRank.getPriority());
+        assertEquals("four of kind: Three", maxRank.toString());
     }
 }

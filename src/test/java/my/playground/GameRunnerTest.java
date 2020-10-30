@@ -90,9 +90,7 @@ public class GameRunnerTest {
     public void expect_tie_with_same_three_of_kind() {
         String gameInput = "Black: 9H 9D 9C  White: 9C 9H 9C 8D";
         GameRunner gameRunner = new GameRunner();
-
         String result = gameRunner.run(gameInput);
-
         String expectedResult = "Tie. - with three of kind: Nine";
         assertEquals(expectedResult, result);
     }
@@ -102,9 +100,7 @@ public class GameRunnerTest {
     public void expect_player_two_win_with_flush() {
         String gameInput = "Black: 2H 4D 3C  White: 2C 6C 7C";
         GameRunner gameRunner = new GameRunner();
-
         String result = gameRunner.run(gameInput);
-
         String expectedResult = "White wins. - with flush: Clubs";
         assertEquals(expectedResult, result);
     }
@@ -120,4 +116,24 @@ public class GameRunnerTest {
         String expectedResult = "Black wins. - with two pair: Two Four";
         assertEquals(expectedResult, result);
     }
+
+    @Test
+    public void expect_player_one_win_four_of_kind() {
+        String gameInput = "Black: 4H 4D 4S 4C  White: 2C 2C 2C 3H";
+
+        String result = new GameRunner().run(gameInput);
+        String expectedResult = "Black wins. - with four of kind: Four";
+        assertEquals(expectedResult, result);
+    }
+
+    @Test
+    public void expect_player_two_win_four_of_kind_by_value() {
+        String gameInput = "Black: 4H 4D 4S 4C  White: 9D 9S 9C 9H";
+        GameRunner gameRunner = new GameRunner();
+
+        String result = gameRunner.run(gameInput);
+        String expectedResult = "White wins. - with four of kind: Nine";
+        assertEquals(expectedResult, result);
+    }
+
 }

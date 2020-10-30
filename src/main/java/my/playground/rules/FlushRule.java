@@ -7,6 +7,10 @@ import my.playground.Rank;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * Hand contains 5 cards of the same suit.
+ * Hands which are both flushes are ranked using the rules for High Card.
+ */
 public class FlushRule implements GameRule {
 
 

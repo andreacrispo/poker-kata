@@ -36,6 +36,10 @@ public class Rank implements Comparable<Rank> {
         return new TwoPair(cardOne, cardTwo);
     }
 
+    public static Rank fourOfKind(Card card) {
+        return new FourOfKind(card);
+    }
+
     public Integer getPriority() {
         return priority;
     }
@@ -158,6 +162,17 @@ public class Rank implements Comparable<Rank> {
         }
     }
 
+    private static class FourOfKind extends Rank {
+        Card card;
+        public FourOfKind(Card card) {
+            super(RankValue.FourOfKind.numericValue, card.getValue());
+            this.card = card;
+        }
+        @Override
+        public String toString() {
+            return "four of kind: " + card.getValue();
+        }
+    }
 
 
     public enum RankValue {
@@ -166,7 +181,8 @@ public class Rank implements Comparable<Rank> {
         TwoPair(3),
         ThreeOfKind(4),
         Straight(5),
-        Flush(6);
+        Flush(6),
+        FourOfKind(7);
 
         public final Integer numericValue;
         RankValue(int numValue){
