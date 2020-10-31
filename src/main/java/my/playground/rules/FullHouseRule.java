@@ -3,6 +3,8 @@ package my.playground.rules;
 import my.playground.Hand;
 import my.playground.Rank;
 
+import java.util.Optional;
+
 /**
  *  3 cards of the same value, (Three Of Kind Rule)
  *  with the remaining 2 cards forming a pair. (Pair Rule)
@@ -11,13 +13,12 @@ import my.playground.Rank;
 public class FullHouseRule implements GameRule {
 
     @Override
-    public Rank evaluate(Hand hand) {
-       if(new PairRule().evaluate(hand) == null)
-           return null;
+    public Optional<Rank> evaluate(Hand hand) {
+        boolean hasAPair = new PairRule().evaluate(hand).isPresent();
+        boolean hasAThreeOfKind = new ThreeOfKindRule().evaluate(hand).isPresent();
+        if(hasAPair && hasAThreeOfKind)
+            return Optional.of(Rank.fullHouse());
 
-       if(new ThreeOfKindRule().evaluate(hand) == null)
-            return null;
-
-        return Rank.fullHouse();
+        return Optional.empty();
     }
 }

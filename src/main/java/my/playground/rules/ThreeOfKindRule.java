@@ -4,7 +4,7 @@ import my.playground.Card;
 import my.playground.Hand;
 import my.playground.Rank;
 import java.util.List;
-import java.util.Map;
+import java.util.Optional;
 
 /**
  * Three of a Kind: Three of the cards in the hand have the same value.
@@ -13,10 +13,12 @@ import java.util.Map;
 public class ThreeOfKindRule implements GameRule {
 
     @Override
-    public Rank evaluate(Hand hand) {
-         List<Card> cardsThrees = hand.cardsEqualValueThreeByThree();
+    public Optional<Rank> evaluate(Hand hand) {
+        System.out.println("ThreeOfKindRule");
+
+        List<Card> cardsThrees = hand.cardsEqualValueThreeByThree();
          if(cardsThrees.size() == 3)
-            return Rank.threeOfKind(cardsThrees.get(2));
-         return null;
+            return Optional.of(Rank.threeOfKind(cardsThrees.get(2)));
+         return Optional.empty();
     }
 }

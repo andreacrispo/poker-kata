@@ -3,15 +3,18 @@ package my.playground.rules;
 import my.playground.Hand;
 import my.playground.Rank;
 
+import java.util.Optional;
+
 public class StraightFlushRule implements GameRule {
 
     @Override
-    public Rank evaluate(Hand hand) {
-        if(new StraightRule().evaluate(hand) == null)
-            return null;
-        if(new FlushRule().evaluate(hand) == null)
-            return null;
+    public Optional<Rank> evaluate(Hand hand) {
+        boolean hasAStraight = new StraightRule().evaluate(hand).isPresent();
+        boolean hasAFlush = new FlushRule().evaluate(hand).isPresent();
 
-        return Rank.straightFlush(hand.getHighestCard());
+        if(hasAStraight && hasAFlush)
+            return Optional.of(Rank.straightFlush(hand.getHighestCard()));
+
+        return Optional.empty();
     }
 }

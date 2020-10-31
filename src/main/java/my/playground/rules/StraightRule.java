@@ -5,6 +5,7 @@ import my.playground.Hand;
 import my.playground.Rank;
 
 import java.util.List;
+import java.util.Optional;
 
 /**
  * Straight: Hand contains 5 cards with consecutive values.
@@ -13,7 +14,7 @@ import java.util.List;
 public class StraightRule implements GameRule {
     
     @Override
-    public Rank evaluate(Hand hand) {
+    public Optional<Rank> evaluate(Hand hand) {
         List<Card> cards = hand.getCards();
 
         for(int i=0; i < cards.size(); i++){
@@ -21,10 +22,10 @@ public class StraightRule implements GameRule {
                 Card current = cards.get(i);
                 Card next = cards.get(i+1);
                 if (!current.getValue().cameBeforeValue(next.getValue())) {
-                   return null;
+                   return Optional.empty();
                 }
             }
         }
-        return Rank.straight(hand.getHighestCard());
+        return Optional.of(Rank.straight(hand.getHighestCard()));
     }
 }

@@ -5,6 +5,7 @@ import my.playground.Hand;
 import my.playground.Rank;
 
 import java.util.List;
+import java.util.Optional;
 
 import static java.util.stream.Collectors.groupingBy;
 
@@ -15,7 +16,7 @@ import static java.util.stream.Collectors.groupingBy;
 public class FlushRule implements GameRule {
 
     @Override
-    public Rank evaluate(Hand hand) {
+    public Optional<Rank> evaluate(Hand hand) {
         List<Card> cards = hand.getCards();
 
         boolean isAllCardsSameSuit = cards.stream()
@@ -24,8 +25,8 @@ public class FlushRule implements GameRule {
                 .anyMatch(s -> s.size() == cards.size());
 
         if(isAllCardsSameSuit)
-            return Rank.flush(hand.getHighestCard());
+            return Optional.of(Rank.flush(hand.getHighestCard()));
 
-        return null;
+        return Optional.empty();
     }
 }
